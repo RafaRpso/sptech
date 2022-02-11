@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        A tag div define uma "caixa" odne o corpo da tag é escrito dentro dessa caixa.
+
+        A div usa a largura toda da página, ou seja, ela usa a linha toda, mas podemos diminuir a largura da div com a propriedade **width**  e **height** do atributo style
+            - px (pixel), cm(centimetro), mm(milimetro), entre outras definem uma largura fixa;
+            - %(percentual) define uma proporção que a largura da div terá
+
+        Caso necessário, a Div usará quantas linhas forem necessárias para "escrever" o conteúdo da div, ou seja, se o corpo da div não coubar na largura da div, a div usará a próxima linha.
+    -->
+
+    <!-- Obs: A div usa toda a página -->
+
+    <h3> Caixas e suas larguras </h3>
+
+    <div>Primeira caixa sem usar o atributo style </div> 
+
+    <div style="background-color: aqua;">
+        Segunda caixa, aqui nós vamos colorir a caixa com o parâmetro background-color
+    </div>
+
+    <div style="background-color:greenyellow;width:40%"> 
+        Terceira caixa com largura proporcional, somente 40% da largura
+    </div>
+
+    <div style="background-color:bisque;width:300px;">
+        Quarta caixinha com largura fixa de 300 pixels
+    </div>
+
+    <br><br><br>
+    <!-- 
+        Podemos alterar a altura da div com ap ropriedade
+        height do atributo style
+    -->
+
+    <h3> Caixas ajustando a altura da div </h3>
+
+    <div style="background-color:blue ;height:3mm"> </div>
+    <div style="background-color:red; height:30mm"></div>
+    <br>
+    <div style="background-color:blue ;height:3mm;width:5cm"> </div>
+    <div style="background-color:red; height:30mm;width:7cm"></div>
+
+    <!--
+        xdxdxd
+    -->
+<br><br>
+    <div style="background-color:yellow; width:30%;float:left;"> 
+        Caixa da esquerda com 30%
+    </div>
+    
+    <div style="background-color:pink; width:30%;float:left;"> 
+        Caixa da direita com 30%
+    </div>
+</body>
+</html>
