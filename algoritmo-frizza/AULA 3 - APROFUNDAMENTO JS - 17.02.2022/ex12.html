@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="botaoTimida" onclick="genteTimida()"> Gente tímida </button>
+    <button style="display:none" id="botaoCausa" onclick="genteCausa()"> Gente que causa </button>
+    <div id='rostos'> 
+        <img src="http://c.files.bbci.co.uk/EE92/production/_101847016_asiatica.jpg" id="genteTimida" style="display:none;">
+        <img src="https://cdn.maemequer.pt/wp-content/uploads/2015/08/menina-105.jpg" id="genteCausa" style="display:none;"> 
+    </div>
+</body>
+</html>
+<script> 
+    function genteTimida(){ 
+        botaoTimida.style.display='display:none'
+        genteTimida.style.display='display:block'
+
+    }
+    function genteCausa(){ 
+        botaoTimida.style.display='display:block'
+        genteCausa.style.display='display:none'
+
+    }
+
+</script>

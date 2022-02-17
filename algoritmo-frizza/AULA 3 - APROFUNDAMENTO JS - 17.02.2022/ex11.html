@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Brasil x Alemanha </h3>
+        <button onclick="golBrasil()"> Gol do Brasil! </button>
+        <button onclick="golAlemanha()"> Gol da Alemanha! </button>
+        <button onclick="limpar()"> Fim de jogo</button>
+        <h4 id='tempoJogo'> Tempo real do jogo: </h4>
+        <br>
+        <div id='textos'>
+            
+        </div>
+    </div>
+ </body>
+</html>
+<script> 
+    function golBrasil(){ 
+        tempoJogo.innerHTML = 'Tempo real do jogo:   '
+        textos.innerHTML += '<span style="color: green;"> Gol do Brasil! </span> <br>'
+        i++; 
+    }
+
+    function golAlemanha(){ 
+        tempoJogo.innerHTML = 'Tempo real do jogo:   '
+        textos.innerHTML += '<span style="color:yellow ;background-color: #941128;"> Gol da Alemanha! </span> <br>'
+        j++;
+    }
+
+    function limpar(){ 
+        tempoJogo.innerHTML = 'O jogo acabou (:  '
+        textos.innerHTML =''    
+    }
+</script> 

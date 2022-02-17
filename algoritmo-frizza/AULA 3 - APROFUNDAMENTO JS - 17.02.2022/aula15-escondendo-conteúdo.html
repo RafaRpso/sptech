@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escondendo Conteúdo.</title>
+</head>
+<body>
+    <h3> Esconder uma verdade</h3>
+
+    <button onclick="verSegredo()" id="btnVerSegredo"> 
+        Veja a verdade
+    </button>
+    
+    <button onclick="esconderSegredo()" style="display:none;" id="btnEsconderSegredo"> 
+        Esconda a verdade
+    </button>
+
+    <div id="segredo" style="display:none;">  
+        PARA DORMIR RAPIDO, BASTA APENAS BATER A CABEÇA NA PAREDE <br>  
+        <img src="kurisu.jpg">
+    </div>
+</body>
+</html>
+<script>
+    function verSegredo() {
+        segredo.style.display = "block"
+        btnEsconderSegredo.style.display = "block"
+        btnVerSegredo.style.display = "none"
+    }
+    
+    function esconderSegredo() {
+        segredo.style.display= "none"        ;
+        btnEsconderSegredo.style.display = "none"
+        btnVerSegredo.style.display = "block"
+       
+    }
+</script> 

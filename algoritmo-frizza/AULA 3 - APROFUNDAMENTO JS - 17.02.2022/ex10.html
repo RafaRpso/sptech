@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div style="margin-left: 40% ;">  
+        <button onclick="pare()" style="background-color:yellow;" > Pare! </button>
+        <button  onclick="pense()" style="background-color:red;"> Pense! </button>
+        <button  onclick="siga() "style="background-color:blue;"> Siga! </button>
+        <br><br>
+        <div id='textos'> </div>
+    </div>
+ </body>
+</html>
+<script> 
+    function pare(){ 
+        textos.innerHTML = ' <b style="color: white; background-color:red;"> Pare e aguarde! </b>  '
+    }
+    function pense(){ 
+        textos.innerHTML = '<b style="color: yellow; background-color:black;"> Pense se pode seguir ou se deve parar! </b>'
+    }
+    function siga(){ 
+        textos.innerHTML = '<b style="color: green;">Pode seguir adiante >:) </b> '
+    }
+</script> 
