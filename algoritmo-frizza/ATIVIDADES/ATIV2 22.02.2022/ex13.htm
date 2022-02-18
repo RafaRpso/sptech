@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13 </title>
+</head>
+<body>
+    <div style="width:20%;">
+    <h1 style="background-color:#F9F9F9"> <span style="color:#009c3b">Br</span><span style="color: #ffdf00;">as</span><span style="color: #002776;">il</span> x Ale<span style="color:#DD0000">ma</span><span style="color: #FFCE00">nha</span> </h1>
+    </div>
+        <button onclick="golBrasil()" style="width:5%; ; background-color: #009c3b; border: none; color:white"> Gol do Brasil! </button>
+        <button onclick="golAlemanha()" style="width:5%; ; background-color: #DD0000; border: none; color:white"> Gol da Alemanha! </button>
+        <button onclick="limpar()" style="width:8%; ; background-color: #2e3634; border: none; color:white"> Recomeçar partida</button>
+        <h4 id='tempoJogo'> Tempo real do jogo: </h4>
+
+        <div id='textos'>
+            
+        </div>
+    </div>
+ </body>
+</html>
+<script> 
+    function golBrasil(){ 
+        tempoJogo.innerHTML = 'Tempo real do jogo:   '
+        textos.innerHTML += '<span style="color: green;"> Gol do Brasil! </span> <br>'
+        i++; 
+    }
+
+    function golAlemanha(){ 
+        tempoJogo.innerHTML = 'Tempo real do jogo:   '
+        textos.innerHTML += '<span style="color:yellow ;background-color: #DD0000;"> Gol da Alemanha! </span> <br>'
+        j++;
+    }
+
+    function limpar(){ 
+        tempoJogo.innerHTML = ' Tempo real do jogo: O jogo acabou (:  '
+        textos.innerHTML =''    
+    }
+</script> 

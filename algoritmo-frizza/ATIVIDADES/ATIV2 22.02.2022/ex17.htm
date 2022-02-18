@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 17</title>
+</head>
+<body>
+    <div>
+        <h1> O que faz um <b><i>Triatleta?</i></b></h1>
+        <button style="width:20%; height:200px; background-color: #4f1aa5; border: none; color:white" onclick="apareceIMG1()"> 
+            <h2>Nada</h2>
+        </button>
+        <button style="width:20%; height:200px; background-color: #138657; border: none; color:white" onclick="apareceIMG2()"> 
+            <h2>Corre</h2>
+        </button>
+        <button style="width:20%; height:200px; background-color: #85440f; border: none; color:white" onclick="apareceIMG3()"> 
+            <h2>Pedala</h2>
+        </button>
+        <button style="width:20%; height:200px; border: 2px solid black;; color:black" onclick="limparIMG()"> 
+            <h2>Limpar</h2>
+        </button>
+    </div>
+    <div id="div_imagens"><br>
+        <img src="https://abstracta.pro.br/wp-content/uploads/2020/02/sh_nadar_251794285.jpg" style="width:20%; float:left;display:none" id="img1" >
+        <img src="http://laboralclinica.com.br/wp-content/uploads/2017/06/pessoa-correndo.png" style="width:20%; float:left; display:none;
+        height: 180px;" id="img2">
+        <img src="https://www.viddia.com.br/wp-content/uploads/2018/05/pedalar-1.png" style="width:20%; height: 180px; display:none; float:left;" id="img3">
+    </div>
+
+</body>
+</html>
+
+<script>
+    function apareceIMG1(){
+        img1.style.display ='block'
+    }
+    
+    function apareceIMG2(){
+        img2.style.display ='block'
+    }
+    
+    function apareceIMG3(){
+        img3.style.display ='block'
+    }
+    function limparIMG(){ 
+        img1.style.display ='none'
+        img2.style.display ='none'
+        img3.style.display ='none'
+    }
+</script>

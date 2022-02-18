@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+</head>
+<body>
+    <button onclick="alerta()" style="width:15%; ; background-color: #6e7afa; border: none; color:white" > <h3> <i>Boas vindas no alerta! </i></h3> </button> 
+    <button onclick="pagina()" style="width:15%; ; background-color: #6e7afa;border: none; color:white" > <h3> <i>Boas vindas na página </i></h3> </button> 
+    <br><br><br>
+    <div style="width:17%;">
+    <h2 style="display:none; background-color: black; color:yellow" id="h2_bemVindo"> Seja muito  <i> bem vindo! </i> </h2>
+    </div>
+</body>
+</html>
+<script>
+    function alerta(){
+        alert(' Seja muito bem vindo (: ')
+    }
+    
+    function pagina(){
+        h2_bemVindo.style.display='block';
+    }
+</script>
