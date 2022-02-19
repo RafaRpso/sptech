@@ -14,7 +14,7 @@ CREATE TABLE Aluno(
 INSERT INTO Aluno VALUES
 						(02221030,'João Vitor Taneguchi','Rua Nipônica Brasileira');
 SELECT * FROM Aluno;
-SELECT ra FROM ALUNO;
+SELECT ra FROM ALUNO; 
 SELECT ra, nome,bairro FROM ALUNO; 
 -- Where é como uma condição 'Se', ou seja: Se 'nome for igual a João Vitor Sales', então faça SELECT * FROM Aluno  
 SELECT * from Aluno WHERE ra = 0221024; -- Seleciona todos os campos onde ra é igual a 0221024
@@ -40,3 +40,6 @@ SELECT * FROM Aluno WHERE nome like  '%Taniguchi'; -- Seleciona o SOBRENOME. Bas
 -- O Set é para 'escolher' o campo no qual será substituido, o where só pode ser feito com o RA
 UPDATE Aluno SET nome = 'Agda Taneguchi' WHERE ra = 2221020 ;  -- NUNCA FAZER UPDATE SEM WHERE, NUNCA, JAMAIS, EM NENHUMA HIPÓTESE, NEM NO ÚLTIMO INSTANTE DE VIDA.
 UPDATE Aluno SET nome = 'Carlos da Silva Gomes', bairro = 'Jardins' WHERE ra = 2221023 ;
+
+-- EXCLUIR UM ALUNO
+DELETE FROM Aluno WHERE ra=2221025; -- Deleta o RA do Marco Antônio, SEMPRE USA WHERE, NUNCA JAMAIS, EM NENHUMA HIPÓTESE DEIXE DE USAR WHERE...
