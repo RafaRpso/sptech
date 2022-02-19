@@ -11,8 +11,11 @@ CREATE TABLE Aluno(
 );
 -- Exibição dos dados da TABELA, ou seja, mostrar os valores CONTIDOS dentro da tabela
 
-INSERT INTO Aluno VALUES
-						(02221030,'João Vitor Taneguchi','Rua Nipônica Brasileira');
+INSERT INTO Aluno VALUES (02221030,'João Vitor Taneguchi','Rua Nipônica Brasileira'),
+                        (02221030,'João Vitor Taneguchi','Rua Nipônica Brasileira'),
+                        (02221030,'João Vitor Taneguchi','Rua Nipônica Brasileira'),
+                        (02221030,'João Vitor Taneguchi','Rua Nipônica Brasileira');
+                        
 SELECT * FROM Aluno;
 SELECT ra FROM ALUNO; 
 SELECT ra, nome,bairro FROM ALUNO; 
@@ -49,3 +52,9 @@ DELETE FROM Aluno WHERE ra=2221025; -- Deleta o RA do Marco Antônio, SEMPRE USA
 
 -- EXIBIR A DESCRIÇÃO DA TABELA
 DESC Aluno; -- Mostra a ESTRUTURA da TABELA
+
+-- EXCLUIR A TABELA ALUNO
+DROP TABLE Aluno ; -- Acabou a turma
+
+-- EXCLUIR O BANCO DE DADOS ALUNO_CCO
+DROP DATABASE aluno_cco -- F no chat. A SpTECH desligou o curso de CCO
