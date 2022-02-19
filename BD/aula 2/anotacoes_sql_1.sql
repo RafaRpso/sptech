@@ -17,12 +17,12 @@ SELECT * FROM Aluno;
 SELECT ra FROM ALUNO; 
 SELECT ra, nome,bairro FROM ALUNO; 
 -- Where é como uma condição 'Se', ou seja: Se 'nome for igual a João Vitor Sales', então faça SELECT * FROM Aluno  
-SELECT * from Aluno WHERE ra = 0221024; -- Seleciona todos os campos onde ra é igual a 0221024
-SELECT * from Aluno WHERE ra <> 0221024; -- Seleciona todos os campos onde o ra é diferente de 0221024
-SELECT * from Aluno WHERE ra >= 0221024; -- Seleciona todos os campos onde o ra é maior ou igual a 0221024
-SELECT * from Aluno WHERE ra <= 0221024; -- Seleciona todos os campos onde o ra é menor ou igual a 0221024
-SELECT * from Aluno WHERE ra != 0221024; -- Não recomendado, use <>
-SELECT * from Aluno WHERE ra = 0221024; -- Seleciona todos os campos onde o ra é igual a 0221024
+SELECT * FROM Aluno WHERE ra = 0221024; -- Seleciona todos os campos onde ra é igual a 0221024
+SELECT * FROM Aluno WHERE ra <> 0221024; -- Seleciona todos os campos onde o ra é diferente de 0221024
+SELECT * FROM Aluno WHERE ra >= 0221024; -- Seleciona todos os campos onde o ra é maior ou igual a 0221024
+SELECT * FROM Aluno WHERE ra <= 0221024; -- Seleciona todos os campos onde o ra é menor ou igual a 0221024
+SELECT * FROM Aluno WHERE ra != 0221024; -- Não recomendado, use <>
+SELECT * FROM Aluno WHERE ra = 0221024; -- Seleciona todos os campos onde o ra é igual a 0221024
 SELECT * FROM Aluno WHERE ra BETWEEN  0221003 AND 02221027;  -- Seleciona todos os campos onde o valor é entre os dois 
 SELECT * from Aluno WHERE ra >= 0221024 and ra <=  0221036; -- Seleciona todos os campos onde o valor maior ou igual e menor ou igual (logica do de cima)
 SELECT * FROM Aluno WHERE nome = 'João Vitor Sales'; -- Seleciona todos os campos onde todos os valores onde nome é 'João Vitor Sales'
@@ -35,6 +35,8 @@ SELECT * FROM Aluno ORDER BY nome; -- Ordena a tabela por uma condição, como a
 SELECT * FROM Aluno ORDER BY nome ASC; -- Ordena a tabela por uma condição, como aqui, pelo nome (ordene pelo nome em ordem ASCENDENTE) 
 SELECT * FROM Aluno ORDER BY nome DESC; -- Ordena a tabela por uma condição, como aqui, pelo nome (ordene pelo nome em ordem DESCENDENTE) 
 SELECT * FROM Aluno WHERE nome like  '%Taniguchi'; -- Seleciona o SOBRENOME. Basicamente procura nomes com 'Taniguchi' no nome 
+SELECT * FROM Aluno WHERE RA IN (02221020, 02221023); -- Seleciona apenas os dois valores dentro dos parênteses
+SELECT * FROM Aluno WHERE RA NOT IN (02221020, 02221023); -- Seleciona todos aqueles que NÃO ESTÃO contidos nos parênteses
 -- Atualizar nome da AGDA
 -- Update serve para atualizar um dado cadastrado, substituindo-o por outrem. Contudo, caso não tenha um WHERE, substituirá de TODOS.
 -- O Set é para 'escolher' o campo no qual será substituido, o where só pode ser feito com o RA
@@ -42,4 +44,8 @@ UPDATE Aluno SET nome = 'Agda Taneguchi' WHERE ra = 2221020 ;  -- NUNCA FAZER UP
 UPDATE Aluno SET nome = 'Carlos da Silva Gomes', bairro = 'Jardins' WHERE ra = 2221023 ;
 
 -- EXCLUIR UM ALUNO
+-- APAGUE DA TABELA Aluno ONDE ra=221025 ; 
 DELETE FROM Aluno WHERE ra=2221025; -- Deleta o RA do Marco Antônio, SEMPRE USA WHERE, NUNCA JAMAIS, EM NENHUMA HIPÓTESE DEIXE DE USAR WHERE...
+
+-- EXIBIR A DESCRIÇÃO DA TABELA
+DESC Aluno; -- Mostra a ESTRUTURA da TABELA
