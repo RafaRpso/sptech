@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <!-- 
+        A tag input cria um campo para entrada
+    -->
+    Entre com o seu <b> primeiro nome: </b> 
+    <input id="primeiro" type="text" placeholder="primeiro nome" > 
+    <br> 
+    Entre com o seu <b> último nome: </b> 
+    <input id="segundo" type="text" placeholder="último nome" >
+    <br> 
+
+    <button onclick="incluir()" style="background-color: red; color:green; "> 
+        Incluir 
+    </button>"
+    <br>
+    <div id = "div_mens"> 
+        <h3>Mini Cadastro de Nome </h3>
+        Seu nome é: <span></span> <br> 
+    </div>  
+
+</body>
+</html>
+<script> 
+function incluir(){ 
+    div_mens.innerHTML += primeiro.value + ' ' + segundo.value+'<br>';
+    // .values serve unicamente e exclusivamente para que consigamos pegar o valor correto do id sem nenhum problema 
+
+    alert( "O seu nome é : "+primeiro.value+ " "+ segundo.value)
+} 
+</script> 
