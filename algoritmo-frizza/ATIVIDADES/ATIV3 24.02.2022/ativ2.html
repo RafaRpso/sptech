@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2 </title>
+</head>
+<body>
+    <h3
+    style="font-family: Verdana;"> Cadastro </h3>
+    <br> 
+    Insira a sua cidade natal<br>
+    <input type="text " id="inputCidade" placeholder="Sua cidade natal"
+    style="border-radius:5px 5px 5px; border: 2px solid rgb(180, 180, 180);"
+    >
+<br> <br>Insira sua data de nascimento
+    <br> 
+    <input type="date" id="inputDataNasto" placeholder="sua data de nascimento"
+    style="border-radius:5px 5px 5px; border: 2px solid rgb(180, 180, 180);"> 
+    <br> 
+    <br>
+    <button onclick="cadastro()"
+    style="background-color: #14193f ; border: none; border-radius: 20px 20px 20px; color: white;"
+    >   
+        <h3 > Cadastrar</h3>
+    </button>
+
+    <div id="div_Mensagem">
+
+        
+    </div>
+</body>
+</html>
+
+<script> 
+    function cadastro(){ 
+        div_Mensagem.innerHTML += `Você nasceu na cidade de <b> ${inputCidade.value} </b>em <u> ${inputDataNasto.value}  `
+    }
+</script> 
