@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 </title>
+</head>
+<body>
+    <h3>
+        Cadastro Rua 
+    </h3> <br> <br> 
+    Entre com o logradouro: <input type="text " placeholder="ex. Rua Doutor Jeremias." id="inputRua"> 
+    <br>
+    Entre com o número: <input type="number" placeholder = "ex. 2845" id="inputNumero"> <br><br>
+    
+    <button onclick="mostrarDados()"> 
+        Cadastrar
+    </button>
+    <br> 
+
+    <div id="divMostrar">
+        
+
+    </div>
+</body>
+</html>
+<script> 
+function mostrarDados(){ 
+    divMostrar.innerHTML = `Seu logradouro é <b>${inputRua.value} </b> <br>  seu número é <b>${inputNumero.value}. </b><br> `
+}
+</script> 
