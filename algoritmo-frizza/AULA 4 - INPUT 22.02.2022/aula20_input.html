@@ -30,9 +30,12 @@
 </html>
 <script> 
 function incluir(){ 
-    div_mens.innerHTML += primeiro.value + ' ' + segundo.value+'<br>';
+    // primeiro = id do nome
+    // segundo = id do sobrenome;
+    div_mens.innerHTML += primeiro.value + ' ' + segundo.value+'<br>'; //concatenação
     // .values serve unicamente e exclusivamente para que consigamos pegar o valor correto do id sem nenhum problema 
 
-    alert( "O seu nome é : "+primeiro.value+ " "+ segundo.value)
+    alert( "O seu nome é : "+primeiro.value+ " "+ segundo.value) //concatenação
+    // com o id.value você consegue o valor do texto, e com isso, manipular as mensagens
 } 
 </script> 
