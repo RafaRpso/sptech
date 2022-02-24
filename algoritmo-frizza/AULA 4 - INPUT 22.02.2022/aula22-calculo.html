@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 22 - Calculo com Input'</title>
+</head>
+
+<body>
+    <h3> Somar números (beta) </h3>
+    <br>
+    <br>
+    Insira o primeiro valor:
+    <input type="number" id="valor1">
+    <br>
+    <br>
+    Insira o segundo valor:
+    <input type="number" id="valor2">
+    <br><br>
+    <button onclick="somar()">
+        Somar
+    </button>
+    <button onclick="subtrair()">
+        Subtrair
+    </button>
+    <button onclick="dividir()">
+        Dividir
+    </button>
+    <button onclick="expo()">
+        Exponiciação
+    </button>
+    <button onclick="rad()">
+        Radiciação
+    </button>
+
+    <br>
+    <br>
+    <span id="apresentarSoma"> </span>
+</body>
+
+</html>
+<script>
+    function somar() {
+        apresentarSoma.innerHTML = `O resultado da sua soma foi: ${ Number(valor1.value) + Number(valor2.value)} `
+    }
+
+    function subtrair() {
+        apresentarSoma.innerHTML = ` O resultado da sua subtração deu: ${( valor1.value - valor2.value) } `
+    }
+
+    function dividir() {
+        apresentarSoma.innerHTML = ` O resultado da sua divisão deu: ${( valor1.value/valor2.value) } `
+    }
+
+    function expo() {
+        apresentarSoma.innerHTML = ` O resultado da sua exponiciação deu: ${( valor1.value**valor2.value) } `
+    }
+
+    function rad() {
+        apresentarSoma.innerHTML = ` O resultado da sua radiciação deu: ${valor1.value ** (1/valor2.value)} `
+
+    }
+</script>
