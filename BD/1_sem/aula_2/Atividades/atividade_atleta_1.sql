@@ -26,7 +26,7 @@ SELECT * FROM Atleta WHERE idAtleta BETWEEN 2 AND 5;
 SELECT * FROM Atleta WHERE idAtleta <> 5; 
 SELECT * FROM Atleta ORDER BY modalidadeAtleta;
 SELECT * FROM Atleta ORDER BY  qtdMedalhaAtleta DESC; 
-SELECT * FROM Atleta WHERE nomeAtleta LIKE "%a";
+SELECT * FROM Atleta WHERE nomeAtleta LIKE "%a%";
 SELECT * FROM Atleta WHERE nomeAtleta LIKE "a%";
 SELECT * FROM Atleta WHERE nomeAtleta LIKE "%n";
 SELECT * FROM Atleta WHERE nomeAtleta LIKE "%o_";
