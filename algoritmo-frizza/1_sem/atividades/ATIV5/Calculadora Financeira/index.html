@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora Financeira</title>
+</head>
+<body>
+	<h3> Programa calculadora financeira </h3>
+	<br> <br>
+	Insira aqui o número total de pessoas que entraram na sua loja 
+	(via sensor/mês): <input id="pessoasSensor">
+	<br> <br>
+	Insira aqui o número total de compras na loja do mês: 
+	<input id="comprasSensor">
+	<br><br>
+	Insira aqui o lucro mensal da loja do: 
+	<input id="lucroSensor">
+	<br><br>
+	<button onclick="calculoSensor()"> calcular</button>
+	<br><br>
+	<div id="mostrarDados">
+
+	
+	</div>
+
+	
+
+
+	<br><br><br>
+
+		
+	
+</body>
+
+
+
+
+<script>
+
+function calculoSensor(){
+		var pessoas = Number(pessoasSensor.value); 
+		var compras = Number(comprasSensor.value);
+		var pessoas_nCompram = pessoas - compras;
+		var lucro = Number(lucroSensor.value);
+		var tamanhoIMG=5;
+		
+		mostrarDados.innerHTML = `O número de pessoas que entram na loja, mas não compram nada é 
+									<b>${pessoas_nCompram} </b>
+									em porcentagem, equivale a <b>${pessoas_nCompram*100/pessoas}%</b>
+									<br><br>
+									A média de lucro por pessoa é de: <b>R$${compras/pessoas}</b>`
+
+
+		mostrarDados.innerHTML = ` <br><br><br>
+		<div style=" width: 40%; height:15rem;"> 
+		<div style="background-color: blue;width: 100%; height:33%; ">
+			<span style="color:white;"> Pessoas que entram </span>
+		</div> 
+		<div style="background-color: white; width: 100%; height:6%;">
+		
+		</div> 
+		<div style="background-color: yellow; width: ${(pessoas_nCompram*100)/pessoas}%; height:33%;">
+			<span style="color:black;"> Pessoas que entram e nada compram (${pessoas_nCompram*100/pessoas}%)</span>
+		</div> 
+	
+	</div>
+
+`
+	}
+
+</script>
+
+</html>
