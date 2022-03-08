@@ -1,4 +1,4 @@
-#include "DHT.h"
+o in da#include "DHT.h"
 #define dht_type DHT11 // define qual o tipo de sensor DHT11 que está utilizando
 int dht_pin= A2; 
 DHT dht_1 = DHT(dht_pin, dht_type); // pode configurar sensores DHTxx

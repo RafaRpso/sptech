@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobilidade & Cidadania</title>
+</head>
+<body>
+    <h1>Mobilidade & Cidadania</h1> 
+    <button style="width:25%; background-color: blue; color:white " onclick="funCarro()">
+       <h2> Carro </h2> 
+    </button>
+
+    <button style="width:25%; background-color: yellowgreen; color:white " onclick="funMoto()">
+        <h2> Moto </h2> 
+     </button>
+     <button style="width:25%; background-color: violet; color:white " onclick="funBike()">
+        <h2> Bicicleta </h2> 
+     </button>
+
+
+     <br> <br>
+     <div id="mostrarResultados"> 
+
+
+
+     </div>
+</body>
+</html>
+<script>
+    function funCarro(){ 
+        mostrarResultados.innerHTML =  " <span style='background-color:blue;'> <i>Carro</i> é o meio mais seguro, mas é o mais caro     </span> <br><br> <img src='https://static.vecteezy.com/system/resources/previews/001/193/785/non_2x/car-png.png' style='height:150px;'>";
+    }
+
+    function funMoto(){ 
+        mostrarResultados.innerHTML =  "<span style='background-color:yellow; color:blue;'>O meio mais rápido é a <i>Moto</i>, mas é o mais perigoso    </span><br><br> <img src='https://www.seekpng.com/png/detail/175-1757232_empinando-moto-png-desenho-de-moto-no-grau.png' style='height:150px;'>";
+    }
+
+    function funBike(){ 
+        mostrarResultados.innerHTML =  "<span style='background-color:yellow;color:blue;' ><b>A <i>Bike</i> é o meio mais econômico mas é o mais cansativo</b> </span><br><br> <img src='https://i.pinimg.com/originals/7e/1e/bd/7e1ebd75dd629746fe27b58dd6b39d55.png' style='height:150px;'>";
+    }
+</script>

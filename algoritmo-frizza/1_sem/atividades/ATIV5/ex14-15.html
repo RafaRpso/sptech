@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 14</title>
+</head>
+<body>
+    <h3> Programa Saldo Caloria </h3> 
+    <br> <br> 
+
+    Pães franceses comidos: <input id="paesConsumo"> <br>
+    Casquinhas comidas: <input id="casquinhasConsumo"> <br>
+
+    <br>
+
+    Minutos de caminhada <input id="minCaminhada"> <br>
+    Minutos de musculação <input id="minMusculacao"> <br> 
+    <br>
+
+    <button onclick="calculoSaldo()"> Calcular Saldo Total</button>
+    <div id="mostrarSaldo">
+
+
+    </div> 
+</body>
+</html>
+
+<script> 
+    function calculoSaldo(){ 
+        var ganhoCal = Number(paesConsumo.value) + Number(casquinhasConsumo.value);
+        var perdaCal = Number(minCaminhada.value) + Number(minMusculacao.value);
+
+        mostrarSaldo.innerHTML = `<div style="background-color:#BB9469; width:40%; color:white;"> 
+        <img src ="data:image/png;base64,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" style="height:200px;"> <br><h4>Entre calorias que ganhou e perdeu, seu saldo de calorias no dia é de ${ganhoCal-perdaCal}kcal</h4>
+         </div>           `
+            
+    }
+
+
+</script>
