@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+</head>
+<body>
+    Insira o seu salário <br>
+    <input type="text"  id="salarioUsuario">
+
+    <button onclick="calculaSalario()"> Confirmar Salário </button>
+
+    <br>
+    <span id="granaAtual"> </span>
+    <div id="mostrarBotoes" style="display:none;">
+        <button onclick="pagar100()" >Pagar conta de 100</button> 
+        <button onclick="pagar500()">Pagar conta de 500</button> 
+        <button onclick="ganharLoteria()">Ganhar Loteria</button>    
+    </div>
+
+</body>
+</html>
+<script> 
+        dinheiroUsuario=0;
+        mostrarCalculos.innerHTML = `<br>Grana atual: R$${dinheiroUsuario}<br><br>`
+
+    function calculaSalario(){ 
+        dinheiroUsuario=salarioUsuario.value;
+        granaAtual.innerHTML = `Grana atual: R$${dinheiroUsuario}<br><br>`
+        mostrarBotoes.style.display = "display:block;"
+        
+        
+    }
+    function pagar100(){
+        dinheiroUsuario=dinheiroUsuario-100;
+        granaAtual.innerHTML = `Grana atual: R$${dinheiroUsuario}<br><br>`
+        mostrarBotoes.style.display = "display:block;"
+        
+    }
+    function pagar500(){
+        granaAtual.innerHTML = `Grana atual: R$${dinheiroUsuario}<br><br>`
+        mostrarBotoes.style.display = "display:block;"
+    }
+    function ganharLoteria(){
+        granaAtual.innerHTML = `Grana atual: R$${dinheiroUsuario}<br><br>`
+        mostrarBotoes.style.display = "display:block;"
+    }
+</script>

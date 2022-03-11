@@ -6,7 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 17</title>
 </head>
-<body>
-    <input type="text" id="idHugo">
+<body>    
+    <h1> Programa economias</h1>
+    <br>
+    Quantas moedas Hugo depositou? <br><br>
+    <input type="text" id="idHugo" placeholder="Hugo">
+    <br><br>Quantas moedas Zezinho depositou? <br>
+    <input type="text" id="idZezinho" placeholder="Zezinho">
+    <br><br>Quantas moedas Luizinho depositou? <br>
+    <input type="text" id="idLuizinho" placeholder="Luizinho">
+    <br><br>
+    <button onclick="calcularEconomia()"> Calcular as economias</button><br>
+    <div id="mostrarEconomias">
+
+
+    </div>
 </body>
 </html>
+<script>
+    function calcularEconomia(){
+        var calcHugo = Number(idHugo.value)*0.50;
+        var calcZe = 0.50*Number(idZezinho.value);
+        var calcLuiz = 0.50*Number(idLuizinho.value);
+
+        mostrarEconomias.innerHTML =  ` O <span style='color:red;'><b>Huguinho</b></span> economizou <b>R$${calcHugo}</b> pois fez <b><u>${idHugo.value}</b></u> depósitos
+                                        <br>
+                                        O <span style='color:blue;'><b>Luizinho</b></span> economizou <b>R$${calcZe}</b> pois fez <b><u>${idZezinho.value}</b></u> depósitos
+                                        <br>
+                                        O <span style='color:green;'><b>Zezinho</b></span> economizou <b>R$${calcLuiz}</b> pois fez <b><u>${idLuizinho.value}</b></u> depósitos
+                                        <br>`
+    }
+</script>
+<!--
+        16. A família Lérgica está dando uma educação financeira a seus filhos desde cedo. Eles possuem 3 filhos, chamados Huguinho, Zezinho e Luizinho e cada um possui um porquinho onde depositam moedas de R$0,50 (sempre desse valor). Para saber o quanto cada filho vai economizar, crie um programa que:
+a) Solicite a quantidade de moedas depositadas por cada filho (note que são 3 campos de entrada)
+b) Calcule quanto cada filho guardou, em R$ (lembre que sempre depositam moedas de R$0,50)
+c) Exiba 3 alertas, um para cada filho, com mensagens como esta: "O Huguinho economizou R$X pois fez Y depósitos"
+
+    17. Refaça a questão anterior, melhorando-a de tal forma que, ao invés de mostrar um alertas, exiba o seguinte texto ao final:
+    • O Huguinho economizou R$X pois fez Y depósitos
+    • O Zezinho economizou R$X pois fez Y depósitos
+    • O Luizinho economizou R$X pois fez Y depósitos
+Tente reproduzir ao máximo a formatação aqui apresentada. Note que os nomes e valores monetários estão em negrito e a quantidade está sublinhada
+-->
