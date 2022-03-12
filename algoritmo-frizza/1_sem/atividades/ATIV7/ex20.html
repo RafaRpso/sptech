@@ -1,0 +1,68 @@
+<!--
+        20. Crie um programa o qual:
+a) Pergunte qual o salário do usuário
+b) Tenha um botão "Confirmar salário". Ao ser clicado, ele deixe aparecendo na tela uma frase assim "Grana atual: R$X.XX"
+c) Tenha um botão "Pagar conta de 100", que, ao ser clicado, ele reduza a "Grana atual" em 100 e atualize essa informação na tela
+d) Tenha um botão "Pagar conta de 500", que, ao ser clicado, ele reduza a "Grana atual" em 500 e atualize essa informação na tela
+e) Tenha um botão "Ganhar 2000 na loteria", que, ao ser clicado, ele aumente a "Grana atual" em 2000 e atualize essa informação na tela
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa salário</title>
+</head>
+<body>
+    <h2>Programa salário</h2> 
+    <div id="pagamentoSal">
+     Escreva o seu salário <br>
+        <input type="text" id="salarioUsuario"> <button onclick='confirmarSalario()'> Confirmar Salário</button><br><br>
+    </div>
+    <button onclick="pagar100()" style='display:none; float:left;width:20%;height:200px'id="pag100"> Pagar conta 100 </button>
+    <button onclick="pagar500()" style='display:none; float:left; width:20%;height:200px' id="pag500"> Pagar conta 500 </button>
+    <button onclick="ganhar2000()" style='display:none;width:20%;height:200px' id="gan2000"> Ganhar 2000 na loteria </button>
+    <br><br>
+    <div id="mostrarSalario">
+        
+    </div>
+
+
+    <div id="extratosBancarios">
+
+    </div>
+</body>
+</html>
+<script>
+    var salarioUser= 0
+    function confirmarSalario(){ 
+        pagamentoSal.style.display = 'none'
+        salarioUser= salarioUsuario.value;
+        pag100.style.display='block';
+        pag500.style.display='block';
+        gan2000.style.display='block';
+        mostrarSalario.innerHTML = `<h3>Saldo na sua conta: <b>R$${salarioUser}</b></h3>`
+
+
+    }
+    function pagar100(){
+        salarioUser=salarioUser-100;
+        mostrarSalario.innerHTML = `<h3>Saldo na sua conta: <b>R$${salarioUser}</b></h3>`
+        extratosBancarios.innerHTML += `Você pagou uma conta de R$100<br>  `
+
+    }
+    function pagar500(){
+        salarioUser=salarioUser-500;
+        mostrarSalario.innerHTML = `<h3>Saldo na sua conta: <b>R$${salarioUser}</b></h3>`
+        extratosBancarios.innerHTML += `Você pagou uma conta de R$500 <br> `
+
+    }
+    function ganhar2000(){
+        salarioUser=salarioUser+2000;
+        mostrarSalario.innerHTML = `Parabéns! Você ganhou na loteria! <br> <h3>Saldo na sua conta: <b>R$${salarioUser}</b></h3>`
+        extratosBancarios.innerHTML += ` Lhe foi transferido R$2000 <br> `
+    }
+
+</script>
