@@ -9,3 +9,40 @@ b) Ao clicar em "Votar na Praça é Nossa", aumente os votos da "Praça é Nossa
 c) Ao clicar em "Votar na Zorra Total", aumente os votos da "Zorra Total" em 1. Atualize essa informação na tela
 d) Independente do voto, atualize o total de votos em 1 e atualize essa informação na tela
 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Urna Eletrônica</title>
+</head>
+<body>
+    <h3> Votar Urna Eletrônica </h3>
+    <button onclick="votarPraca()"> Votar na "Praça é nossa"</button>  <button onclick="votarZorra()"> Votar na "Zorra total"</button>
+    <br><br>
+    <div id="mostrarDadosPraca">
+
+    </div>
+
+    <div id="mostrarDadosZorra">
+
+    </div>
+</body>
+</html>
+<script>
+    var votosPracaN=0;
+    var votosZorrT=0;
+    mostrarDadosPraca.innerHTML = `Praça é nossa: <b>${votosPracaN}</b>`
+    mostrarDadosZorra.innerHTML = `Zorra Total: <b>${votosZorrT}</b>`
+    function votarPraca(){
+        votosPracaN=votosPracaN+1
+        mostrarDadosPraca.innerHTML = `Praça é Nossa:  <b>${votosPracaN}</b>`
+    }
+    function votarZorra(){
+        votosZorrT=votosZorrT+1
+        mostrarDadosZorra.innerHTML = `Zorra Total: <b>${votosZorrT}</b>`
+    }
+</script>

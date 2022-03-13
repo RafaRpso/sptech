@@ -29,7 +29,8 @@ e) Tenha um botão "Ganhar 2000 na loteria", que, ao ser clicado, ele aumente a 
         
     </div>
 
-
+    <button onclick="mostrarEmprestimos()" style="display:none" id="botaoMostrar"> Mostrar Extrato</button>
+    <button onclick="ocultarEmprestimos()" style="display:none" id="botaoOcultar"> Ocultar Extrato</button><br>
     <div id="extratosBancarios">
 
     </div>
@@ -43,6 +44,7 @@ e) Tenha um botão "Ganhar 2000 na loteria", que, ao ser clicado, ele aumente a 
         pag100.style.display='block';
         pag500.style.display='block';
         gan2000.style.display='block';
+
         mostrarSalario.innerHTML = `<h3>Saldo na sua conta: <b>R$${salarioUser}</b></h3>`
 
 
@@ -51,18 +53,33 @@ e) Tenha um botão "Ganhar 2000 na loteria", que, ao ser clicado, ele aumente a 
         salarioUser=salarioUser-100;
         mostrarSalario.innerHTML = `<h3>Saldo na sua conta: <b>R$${salarioUser}</b></h3>`
         extratosBancarios.innerHTML += `Você pagou uma conta de R$100<br>  `
+        botaoOcultar.style.display='block';
 
     }
     function pagar500(){
-        salarioUser=salarioUser-500;
+        salarioUser=((salarioUser-500));
         mostrarSalario.innerHTML = `<h3>Saldo na sua conta: <b>R$${salarioUser}</b></h3>`
         extratosBancarios.innerHTML += `Você pagou uma conta de R$500 <br> `
+        botaoOcultar.style.display='block';
+        mostrarSalario.innerHTML+=`<b>${testeNegativo2}</b>`
+      
 
     }
     function ganhar2000(){
         salarioUser=salarioUser+2000;
         mostrarSalario.innerHTML = `Parabéns! Você ganhou na loteria! <br> <h3>Saldo na sua conta: <b>R$${salarioUser}</b></h3>`
         extratosBancarios.innerHTML += ` Lhe foi transferido R$2000 <br> `
+        botaoOcultar.style.display='block';
+    }
+    function ocultarEmprestimos(){
+        extratosBancarios.style.display='none';
+        botaoOcultar.style.display='none';
+        botaoMostrar.style.display='block'
+    }
+    function mostrarEmprestimos(){
+        extratosBancarios.style.display='block';
+        botaoOcultar.style.display='block';
+        botaoMostrar.style.display='none';
     }
 
 </script>

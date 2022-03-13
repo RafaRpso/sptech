@@ -8,3 +8,37 @@ Depósitos efetuados: 0
 b) Ao clicar num botão "Depositar 0,50", o valor depositado aumente em R$0,50 e a quantidade de depósitos aumente em 1. Atualize essas informações na tela
 c) Ao clicar num botão "Depositar 2,00", o valor depositado aumente em R$2,00 e a quantidade de depósitos aumente em 1. Atualize essas informações na tela
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Tio Patinhas</title>
+</head>
+<body>
+    <h3> Programa Tio Patinhas!</h3>
+    <div id="mostrarDados">
+        <!-- deposito 2.00 e deposito 0.50-->
+    </div> <br>
+    <button onclick="depositarDois()"> Depositar R$2.00 </button>
+    <button onclick="depositarCents()"> Depositar R$0.50 </button>
+</body>
+</html>
+<script>
+    var valCofrinho=0.00;
+    var depEfetuados=0;
+    
+    mostrarDados.innerHTML = `Saldo: <b><u>R$${valCofrinho}</b></u><br>Depósitos efetuados: <b>${depEfetuados}</b>`
+    function depositarDois(){
+        valCofrinho=valCofrinho+2.00
+        depEfetuados=depEfetuados+1;
+        mostrarDados.innerHTML = `Saldo: <b><u>R$${valCofrinho}</b></u><br>Depósitos efetuados: <b>${depEfetuados}</b>`
+    }
+    function depositarCents(){
+        valCofrinho=valCofrinho+0.50
+        depEfetuados=depEfetuados+1;
+        mostrarDados.innerHTML = `Saldo: <b><u>R$${valCofrinho}</b></u><br>Depósitos efetuados: <b>${depEfetuados}</b>`
+    }
+</script>
