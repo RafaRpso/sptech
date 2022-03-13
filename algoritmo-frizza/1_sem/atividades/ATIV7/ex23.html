@@ -1,0 +1,72 @@
+<!--
+
+    22. Crie um programa que simula uma mini urna eletrônica assim:
+a) Exiba na tela, logo de início:
+Votos na Praça é Nossa: 0
+Votos no Zorra Total: 0
+Total de Votos: 0
+b) Ao clicar em "Votar na Praça é Nossa", aumente os votos da "Praça é Nossa" em 1. Atualize essa informação na tela
+c) Ao clicar em "Votar na Zorra Total", aumente os votos da "Zorra Total" em 1. Atualize essa informação na tela
+d) Independente do voto, atualize o total de votos em 1 e atualize essa informação na tela
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Urna Eletrônica</title>
+</head>
+<body>
+    <h3> Votar Urna Eletrônica </h3>
+    <div>
+            <img src="https://static1.purepeople.com.br/articles/0/31/75/80/@/3585054-zeze-di-camargo-esclareceu-sobre-seu-est-624x600-1.jpg" style="height:150px;float:left; " onclick="votarCantor2()">
+            <div style="width:100px;height:150px;float:left;background-color: white;">
+                <div id="mostrarDadosCantor2" >
+
+                </div>
+   
+            </div>
+                
+            <img src="https://tribunapr.uol.com.br/wp-content/uploads/2021/10/30123652/roberto-carlos-970x550.jpg" style="height:150px;float:left;" onclick="votarCantor1()"> 
+            <div style="width:100px;height:150px;float:left;background-color: white;">
+                <div id="mostrarDadosCantor1" >
+
+                </div>
+   
+            </div>
+
+
+
+    </div>
+
+
+    <div id="votosTotais" style="clear:left;">
+
+    </div>
+</body>
+</html>
+<script>
+    alert('Use o programa em tela cheia para melhor experiência.')
+    var votosRoberto=0;
+    var votosZezeDiCamargo=0;
+    mostrarDadosCantor1.innerHTML = `Votos <b>ROBERTO CARLOS:</b> <b>${votosRoberto}</b><br>`
+    mostrarDadosCantor2.innerHTML = `Votos <b>ZEZÉ DI CAMARGO ${votosZezeDiCamargo}</b><br>`
+    votosTotais.innerHTML = `<br><br><b><h3>Votos Totais: ${votosRoberto+votosZezeDiCamargo}</b></h3>`
+    
+    
+    
+    function votarCantor1(){
+        votosRoberto=votosRoberto+1
+        mostrarDadosCantor1.innerHTML = 
+        mostrarDadosCantor1.innerHTML = `Votos <b>ROBERTO CARLOS:</b> <b>${votosRoberto}</b>`
+        votosTotais.innerHTML = `<br><br><b><h3>Votos Totais: ${votosRoberto+votosZezeDiCamargo}</b></h3>`
+    }
+    function votarCantor2(){
+        votosZezeDiCamargo=votosZezeDiCamargo+1
+        mostrarDadosCantor2.innerHTML = `Votos <b>ZEZÉ DI CAMARGO ${votosZezeDiCamargo}</b>`
+        votosTotais.innerHTML = `<br><br><b><h3>Votos Totais: ${votosRoberto+votosZezeDiCamargo}</b></h3>`
+    }
+</script>

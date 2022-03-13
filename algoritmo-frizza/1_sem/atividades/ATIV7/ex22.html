@@ -30,19 +30,26 @@ d) Independente do voto, atualize o total de votos em 1 e atualize essa informa�
     <div id="mostrarDadosZorra">
 
     </div>
+    <div id="mostrarDadosTotais">
+
+    </div>
 </body>
 </html>
 <script>
+
     var votosPracaN=0;
     var votosZorrT=0;
+    mostrarD
     mostrarDadosPraca.innerHTML = `Praça é nossa: <b>${votosPracaN}</b>`
     mostrarDadosZorra.innerHTML = `Zorra Total: <b>${votosZorrT}</b>`
     function votarPraca(){
         votosPracaN=votosPracaN+1
         mostrarDadosPraca.innerHTML = `Praça é Nossa:  <b>${votosPracaN}</b>`
+        mostrarDadosTotais.innerHTML = `Votos totais: ${votosPracaN+votosZorrT} `
     }
     function votarZorra(){
         votosZorrT=votosZorrT+1
         mostrarDadosZorra.innerHTML = `Zorra Total: <b>${votosZorrT}</b>`
+        mostrarDadosTotais.innerHTML = `Votos totais: ${votosPracaN+votosZorrT} `
     }
 </script>
