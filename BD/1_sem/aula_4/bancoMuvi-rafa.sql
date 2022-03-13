@@ -11,7 +11,7 @@ CREATE TABLE tbGestor(
 );
 
 CREATE TABLE tbTelGestor(
-        idTelefone INT NOT NULL NOT NULL PRIMARY KEY ,   
+		idTelefone INT NOT NULL NOT NULL PRIMARY KEY ,   
         numeroPessoalTelefone CHAR(14),
         numeroEmpresarialTelefone CHAR(14) NOT NULL,
         numeroFixoTelefone CHAR(13)
