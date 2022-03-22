@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Exercício refrigerante</h3>
+
+    Quantos latinhas de refrigerante você toma por dia?<br>
+    <input type="text" name="" id="inpQuantiaLatinhas"> <button onclick='calcularRefri()'>Calcular  </button>
+    <br><br>
+    <div id='mostrarDados'>
+
+    </div>
+</body>
+</html>
+<script>
+    function calcularRefri(){ 
+        var qtdLatas = inpQuantiaLatinhas.value;
+        var qtdLatas = qtdLatas*365;
+        mostrarDados.innerHTML = `Você consome ${qtdLatas} no ano! <br>`
+        if(qtdLatas>500){
+            mostrarDados.innerHTML+='Cuidado com as diabetes!<br>'
+        }
+
+    }
+</script>
