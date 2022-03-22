@@ -1,0 +1,57 @@
+<!-- 8 (desafio). Crie um minissistema de avaliação de atendimento o qual:
+a) Mostre a frase, em letras grande, "Como está meu atendimento?"
+b) Tenha uma 'combo' com os itens 
+	1 estrela
+	2 estrelas
+	3 estrelas
+	4 estrelas
+	5 estrelas
+c) Abaixo da 'combo', o seguinte texto:
+	Média atual: 0 estrelas
+	Número de avaliações: 0
+d) Ao clicar num botão "Confirmar avaliação", o programa pega o valor da avaliação e atualiza os valores de média e número de avaliações do item c). A regra é que o 1º item da combo vale 1, o 2º vale 2 e assim por diante.   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+</head>
+<body>
+    <h3> Como está o meu atendimento?</h3>
+    <select id='valorEstrelas'>
+        <option value='1'>
+            1 Estrela
+        </option>
+        <option value='2'>
+            2 Estrela
+        </option>
+        <option value='3'>
+            3 Estrela
+        </option>
+        <option value='4'>
+            4 Estrela
+        </option>
+        <option value='5'>
+            5 Estrela
+        </option>
+    </select>
+    <button onclick='confirmarAvalicacao()'>Confirmar Avaliação</button><br><br>
+    <div id='mostrarDados'>
+
+    </div>
+</body>
+</html>
+<script>
+    var mediaEstrela=0;
+    var contador=0;
+    var somaEstrelas=0;
+    function confirmarAvalicacao(){
+        contador+=1;
+         somaEstrelas=Number(valorEstrelas.value)+somaEstrelas
+        mediaEstrela=somaEstrelas/contador ;
+
+        mostrarDados.innerHTML = `Média atual: ${mediaEstrela} estrelas <br> Número de avaliações: ${contador}`
+    }
+</script>

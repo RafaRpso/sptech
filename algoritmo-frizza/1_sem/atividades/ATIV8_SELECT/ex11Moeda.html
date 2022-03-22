@@ -1,0 +1,65 @@
+<!-- 11. (Desafio) Faça um programa que simule um cofrinho.
+    a) Tenha uma select box com os valores atuais de moeda.
+    b) Abaixo tenha as frases: 
+        ◦ “O saldo do cofrinho é de: R$ 99,99”
+        ◦ “A quantidade de operações foi: 99”
+        ◦ “Média dos depósitos: R$ 99,99”
+    c) Tenha um botão “Depositar” que ao clicar soma o valor da moeda no saldo do cofrinho e adiciona 1 a quantidade de operações.
+    d) Tenha um botão “Gastar a Grana” que zera o valor do cofrinho, a quantidade de operações e a média dos depósitos.
+#ficaadica1 – Use variável global
+#ficaadica2 – Não esqueça o tratamento de números (incluindo casas decimais).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+<body>
+    <h4> Escolha o valor para adicionar no cofrinho</h4>
+    <select onchange='colocarMoeda()' id='valorMoeda'> 
+        <option value='0.05'>
+            R$0.05
+        </option>
+        <option value='0.10'>
+            R$0.10
+        </option>
+        <option value='0.25'>
+            R$0.25
+        </option>
+        <option value='0.50'>
+            R$0.50
+        </option>
+        <option value='1.00'>
+            R$1.00
+        </option>
+    </select>
+    <br><br><br>
+    <div id='mostrarDados'>
+
+    </div>
+</body>
+</html>
+<script>
+    var totalMoeda=0;
+    var contador=0;
+    function colocarMoeda(){
+        var mediaDepositos;
+        
+        totalMoeda=Number(valorMoeda.value)+totalMoeda;
+        contador+=1;
+
+        mediaDepositos=totalMoeda/contador;
+
+        mostrarDados.innerHTML = `O saldo do cofrinho é de: R$ <b> ${totalMoeda.toFixed(2)} </b> <br>
+        
+        A quantidade de operações foi de <b> ${contador} </b> <br>
+        
+        Média dos depósitos: R$ <b>${mediaDepositos.toFixed(2)}</b>`
+
+        
+
+    }
+</script>

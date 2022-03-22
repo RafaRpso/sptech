@@ -1,0 +1,75 @@
+<!--14. Robervaldo adora pizza. Todo mundo adora, né? Que tal criarmos um programa que nos ajude a calcular o preço final de uma pizza de 3 ingredientes.
+O programa deve conter:
+    a. SABOR DA PIZZA - uma combo box com quatro opções: Muçarela à R$ 23,00; Calabresa à R$ 24,00; Atum à R$ 26,00 e Portuguesa à R$ 30,00.
+Obs1.: este campo já deve receber o foco do teclado assim que a página for carregada
+    b. INCREMENTO DA PIZZA - 3 (três) combo box, um abaixo do outro, todos com os mesmos seis itens:  Queijo à R$ 2,00; Presunto à R$ 2,50; Ovo à R$ 1,50; Palmito à R$ 4,00; Frango à R$ 3,50; e Catupiry à R$ 3,00;
+    c. - Um botão "Calcular preço da pizza"
+Ao clicar no botão, é exibido um texto abaixo dele com a exata formatação abaixo (negrito, sublinhado etc):-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 14 Pizza</title>
+</head>
+<body>
+    <h4> Escolha o sabor da <b> Pizza</b></h4>
+    <select id='selectPizza'>
+        <option value="23.00"> Muçarela</option>
+        <option value="24.00"> Calabresa</option>
+        <option value="26.00"> Atum</option>
+        <option value="30.00"> Portuguesa</option>    
+    </select>
+   <br><br> 
+    <h4> Escolha o sabor do <b> incremento</b></h4>
+   <select id='selectIncremento'>
+       <option value="null" default disabled> Selecione o seu 1° incremento</option>
+        <option value="2.00"> Queijo</option>
+        <option value="2.50"> Presunto</option>
+        <option value="3.50"> Frango</option>
+        <option value="4.00"> Palmito</option> 
+        <option value="1.50"> Ovo</option>  
+        <option value="3.00"> Catupiry</option>     
+    </select><br><br>
+    <select id='selectIncremento2'>
+        <option value="null" selected disabled> Selecione o seu 2° incremento</option>
+        <option value="2.00"> Queijo</option>
+        <option value="2.50"> Presunto</option>
+        <option value="3.50"> Frango</option>
+        <option value="4.00"> Palmito</option> 
+        <option value="1.50"> Ovo</option>  
+        <option value="3.00"> Catupiry</option>     
+    </select><br><br><select id='selectIncremento3'>
+        <option value="null" selected disabled > Selecione o seu 3° incremento</option>
+        <option value="2.00"> Queijo</option>
+        <option value="2.50"> Presunto</option>
+        <option value="3.50"> Frango</option>
+        <option value="4.00"> Palmito</option> 
+        <option value="1.50"> Ovo</option>  
+        <option value="3.00"> Catupiry</option>     
+    </select><br><br><br>
+    <button onclick='calculoPizza()'>Calcular preço final</button>
+    <br><br>
+    <div>
+
+    </div>
+    <div id='mostrarDados'> 
+        
+    </div>
+</body>
+</html>
+<script>
+    var incremento=0;
+
+    function calculoPizza(){
+       incremento=Number(selectIncremento.value)+Number(selectIncremento2.value)+Number(selectIncremento3.value)
+        
+        var totalPizza=Number(selectPizza.value)+incremento;
+        mostrarDados.innerHTML=`A pizza era R$<b> ${selectPizza.value}</b> mas foi acrescido R$ ${selectIncremento.value}, R$ ${selectIncremento2.value}, R$ ${selectIncremento3.value} (R$${incremento.toFixed(2)}) e custará um total de <span style='color:red;'><u><b>R$${totalPizza.toFixed(2)}</b></u></span>`
+    
+    
+    }
+    
+</script>

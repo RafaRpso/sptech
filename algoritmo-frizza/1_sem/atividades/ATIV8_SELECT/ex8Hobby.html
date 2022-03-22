@@ -1,0 +1,47 @@
+<!--
+    8 (ad). Crie um programa o qual:
+a) Solicite ao usuário qual hobby ele quer praticar. Isso numa combo com as opções Dançar, Jogar vídeo game, Assistir seriados e Ouvir rock.
+
+b) Ao selecionar um dos itens, uma imagem relativa ao hobby deve aparecer na tela. Seguem sugestões de imagens (pode baixar e deixar as imagens locais se preferir):
+Dança: https://cdn.shopify.com/s/files/1/1061/1924/files/Dancer_With_Red_Dress_Emoji_400x400.png
+Video game: https://cdn.shopify.com/s/files/1/1061/1924/files/Virus_Emoji_400x400.png
+Assistir tv/streaming: https://cdn.shopify.com/s/files/1/1061/1924/files/Man_Bowing_Emoji_400x400.png
+Ouvir Rock: https://cdn.shopify.com/s/files/1/1061/1924/files/Sign_of_the_Horns_Emoji_400x400.png
+c) A largura (style.width) da imagem deve começar com 50px e a cada nova execução da função ele deve crescer 10px, assim, a primeira execução a largura será de 50, a segunda de 60, a terceira 70 e assim por diante.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8 Hobby</title>
+</head>
+<body>
+    <select id="selectHobby" onchange='mostrarImagem()'>
+        <option value=" https://cdn.shopify.com/s/files/1/1061/1924/files/Dancer_With_Red_Dress_Emoji_400x400.png">Dança</option>
+        <option value="https://cdn.shopify.com/s/files/1/1061/1924/files/Virus_Emoji_400x400.png">Video Game</option>
+        <option value="https://cdn.shopify.com/s/files/1/1061/1924/files/Man_Bowing_Emoji_400x400.png">Assistir Seriados</option>
+        <option value="https://cdn.shopify.com/s/files/1/1061/1924/files/Sign_of_the_Horns_Emoji_400x400.png">Ouvir Rock</option>
+    </select> <button onclick='mostrarImagem()'> Aumentar tamanho</button> <button onclick='zerarTamanho()'> Zerar tamanho</button><br>
+
+    <div id='mostrarDados'>
+
+
+    </div>
+</body>
+</html>
+<script>
+    var largura=50
+    function mostrarImagem(){
+        
+        mostrarDados.innerHTML = `<img src="${selectHobby.value}" style='width: ${largura}px;' id='imagemHobby'> `
+        
+        largura=largura+10
+    }
+    function zerarTamanho(){ 
+        largura=50;
+        mostrarDados.innerHTML = `<img src="${selectHobby.value}" style='width: ${largura}px;' id='imagemHobby'> `
+    }
+</script>
