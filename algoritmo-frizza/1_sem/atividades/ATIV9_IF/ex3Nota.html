@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <h3>Ex. Notas</h3>
+Insira os valores das notas<br>
+    <input  id="inpNotas1" placeholder="nota 1">
+    <input  id="inpNotas2" placeholder="nota 2">
+    <input  id="inpNotas3" placeholder="nota 3">
+    <button onclick='calcularNotas()'> Análise de desempenho</button><br><br>
+    <div id='mostrarDados'>
+
+    </div>
+</body>
+</html>
+<script>
+    function calcularNotas(){ 
+        var media=(Number(inpNotas1.value)+Number(inpNotas2.value)+Number(inpNotas3.value))/3
+
+                
+
+        
+        mostrarDados.innerHTML='Sua média foi de '+media
+
+        if(media>9.4){
+
+            mostrarDados.innerHTML+='<br><br>Parabéns! Você é fora de série!'
+        }
+        if(media>10){
+            mostrarDados.innerHTML='Você inseriu algum valor errado à respeitodas notas. Elas vão de 0 a 10.'
+        }
+    }
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. Energia</title>
+</head>
+<body>
+    Insira a quantidade de kWh consumida por dia. 
+    <input id='inpQtdKwh'>
+    <br>
+    <button onclick='calcularLuz()'>Calcular conta de luz</button>
+    <br><br>
+    <div id='mostrarDados'>
+
+    </div>
+    <br><br>
+    <div style='width:65%; height:150px;background-color:#DDDDDD; border-radius: 25px;'>
+        Entrada: 2 | Saida: 60 51 45.90 <br>
+        Entrada: 100 | Saida: 3000 2.550.00 <br>
+        Entrada: 600 | Saida: 1800 15300
+    </div>
+</body>
+</html>
+<script>
+    function calcularLuz(){ 
+        var totalMes = inpQtdKwh.value *30 
+        var totalDinheiro = totalMes*0.85
+
+        if(totalMes<=100){
+            mostrarDados.innerHTML = `Você consome <b>${totalMes}kWh</b> por mês. A conta seria <b>R$${totalDinheiro}</b>, mas você teve um desconto de 10%, totalizando <b>R$${totalDinheiro*0.90}</b>`
+        }
+        if(totalMes>100){
+            mostrarDados.innerHTML = `Você consome <b>${totalMes}kWh</b> por mês. A conta é <b>R$${totalDinheiro}</b>.`
+        }
+    }
+</script>

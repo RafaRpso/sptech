@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. Finanças</title>
+</head>
+<body>
+    Insira o valor do seu saldo no Banco: <input type="text" id='inpSaldoBanco'><br>
+    <button onclick="calcularSaldo()"> Calcular </button>
+    <div id='mostrarDados'>
+
+    </div>
+</body>
+</html>
+<script>
+    function calcularsaldo(){ 
+        var valorSaldo = inpSaldoBanco.value;
+        if(valorSaldo==0){
+            mostrarDados.innerHTML='Conta zerada'
+        }
+        if(valorSaldo<0){
+            mostrarDados.innerHTML='<span style="color:red">Conta zerada </span>'
+        }
+        if(valorSaldo>0){
+            mostrarDados.innerHTML='<span style="color:blue"> Saldo Positivo! </span>'
+        }
+        
+    }
+</script>
