@@ -31,7 +31,7 @@
         if(totalMes<=100){
             mostrarDados.innerHTML = `Você consome <b>${totalMes}kWh</b> por mês. A conta seria <b>R$${totalDinheiro}</b>, mas você teve um desconto de 10%, totalizando <b>R$${totalDinheiro*0.90}</b>`
         }
-        if(totalMes>100){
+        else{
             mostrarDados.innerHTML = `Você consome <b>${totalMes}kWh</b> por mês. A conta é <b>R$${totalDinheiro}</b>.`
         }
     }

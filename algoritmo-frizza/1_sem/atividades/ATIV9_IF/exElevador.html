@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Insira a quantidade de homens e mulheres no elevador </h2>
+    <input type="text" name="" id="quantiaHomens" placeholder="quantia de homens"> 
+    <input type="text" name="" id="quantiaMulheres" placeholder="quantia de mulheres">
+    <br><br>
+    <button onclick="calcularPeso()">
+        Ligar elevador
+    </button>
+    <div id="mostrarDados">
+
+
+    </div>
+</body>
+</html>
+<script>
+    function calcularPeso(){
+        pesoHomens = Number(quantiaHomens.value) * 90;
+        pesoMulheres = Number(quantiaMulheres.value) * 70;
+        pesoTotal = pesoHomens+pesoMulheres;
+        if(pesoTotal<500){
+            mostrarDados.innerHTML = `<br><span style="color:green"> Elevador vai se mover pois seu peso é ${pesoTotal}kg </span>`
+        }
+        else{
+            mostrarDados.innerHTML = `<br><span style="color:red"> Alguém precisa sair, precisam sair ${pesoTotal-499}kg </span>`
+        }
+    }
+</script>

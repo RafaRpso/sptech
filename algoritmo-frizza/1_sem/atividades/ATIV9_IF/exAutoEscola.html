@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNH SUSPENSA</title>
+</head>
+<body>
+    <h3> AutoEscola </h3>
+
+    Insira o seu nome <input id="nomeUsuario"><br><br>
+    Insira sua idade <input id="idadeUsuario"> <br>
+    <button onclick="calculoIdade()"> Calcular</button>
+    <br><br>
+    <div id="mostrarDados">
+
+    </div>
+</body>
+</html>
+<script>
+    function calculoIdade(){
+        var nome = nomeUsuario.value;
+        var idade = idadeUsuario.value
+
+        if(idade<18){
+            mostrarDados.innerHTML = `${nome} vai jogar playstation!`
+        }
+        else{
+            mostrarDados.innerHTML = `${nome} vamos tirar a CNH? `
+        }
+    }
+</script>

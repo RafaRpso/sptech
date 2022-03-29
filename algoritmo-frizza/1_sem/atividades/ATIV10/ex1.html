@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício combo</title>
+</head>
+<body>
+   
+        <h4> Preencha o formulário </h4>
+        <select id="selectEstados">  
+            <option value="0"> Selecionar </option>
+            <option value="1"> Sp - Capital</option>
+            <option value="2"> Sp - Interior</option>
+            <option value="3"> Outro estados</option>
+        </select> 
+        <button onclick="selecionarEstado()"> Falar do local </button>
+
+    <br><br> <div id="mostrarDados">
+
+    </div>
+</body>
+</html>
+<script>
+    function selecionarEstado(){ 
+        if(selectEstados.value==0){
+            mostrarDados.innerHTML=' '
+            alert("Favor escolher uma opção")
+            
+        }
+        else{
+            if(selectEstados.value==1){
+            mostrarDados.innerHTML=`<h3> Os nascidos dessa cidade são paulistanos </h3>
+            <img src='https://todepassagem.clickbus.com.br/wp-content/uploads/2020/03/Cidade-de-S%C3%A3o-Paulo.jpg' style='width:200px'>`
+            }
+            if(selectEstados.value==2){
+                mostrarDados.innerHTML=`<h3> Os nascidos neste estado são paulistas </h3>
+                <img src='https://i0.wp.com/catagua.com.br/wp-content/uploads/2020/06/7-vantagens-de-morar-no-interior-de-sao-paulo.jpg?fit=800%2C533&ssl=1&is-pending-load=1'style='width:200px'>`
+            }
+            if(selectEstados.value==3){
+                mostrarDados.innerHTML=`<h3> Você é de outro estado! </h3>
+                <img src='https://www.viajali.com.br/wp-content/uploads/2018/09/praias-de-pernambuco-17-1.jpg'style='width:200px'> `
+            }
+            
+        }
+       
+    }
+</script>

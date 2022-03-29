@@ -31,8 +31,16 @@ Insira os valores das notas<br>
 
             mostrarDados.innerHTML+='<br><br>Parabéns! Você é fora de série!'
         }
-        if(media>10){
+        
+        else{
+            if(media>10){
             mostrarDados.innerHTML='Você inseriu algum valor errado à respeitodas notas. Elas vão de 0 a 10.'
+            }
+            if(media==0){
+                mostrarDados.innerHTML = "Foi mal ein :/"
+            }
+            mostrarDados.innerHTML+='<br><br>Você foi normal! Parabéns'
         }
+       
     }
 </script>
