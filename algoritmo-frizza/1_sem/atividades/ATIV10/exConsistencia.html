@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Entre com o nome do aluno: <input id='nomeAluno'><br><br>
+    Entre com a idade do aluno: <input id='idadeAluno'>
+    <br><br>
+    <button onclick="calcularMensagem()"> Calcular mensagem</button>
+    <br><br>
+    <div id="mostrarDados">
+
+    </div>
+</body>
+</html>
+<script>
+function calcularMensagem(){
+    var nAluno= nomeAluno.value
+    var ageAluno = idadeAluno.value
+
+    if(nAluno==""){
+        alert('Nome inválido. Tente novamente');
+    }
+    else{
+        if(nomeAluno.value==Number(nomeAluno.value)){
+            alert("Seu nome não pode ser um número. Tente novamente")
+        }
+        if(idadeAluno.value!=Number(idadeAluno.value)){
+            alert('A idade precisa ser um número. Tente novamente.')
+        }
+        if(ageAluno<=0){
+            alert('Idade inválida. Tente novamente.');
+        }
+        if(ageAluno>80){
+            alert("Procure uma escola especial. Tente novamente")
+        }
+        if(ageAluno<18){
+            mostrarDados.innerHTML=`Você não pode participar da auto-escola. Faltam ${18-ageAluno} anos`
+        }
+        if(ageAluno>=18){
+            mostrarDados.innerHTML=`Você pode participar da aula. Seu nome é ${nAluno} e sua idade é ${ageAluno} anos`
+        }
+        
+    }
+}
+</script>
