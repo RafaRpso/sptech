@@ -10,7 +10,7 @@ body{
     font-family: 'Courier New', Courier, monospace;   
     padding:0;
     margin:0;
-    background-color: #10171a;
+
 }
 .header .titulo{
     margin-left:5%;
@@ -18,36 +18,129 @@ body{
 .header .navbar{
     list-style:none;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     justify-items: center;
     width:40%;
     margin-top: 2%;
     
 }
+li{
+    margin-left:2vw;
+}
 .destaque{
-    color:#2097d3;
+    color:#7543c7;
 }
-span{
-    color: rgb(165, 150, 131);
-}
+
 .header{
-    background-color:#192428;
+    background-color:#000000;
     width:100%;
-    color:rgb(182, 200, 218);
+    color:#b6c8da;
     border: 1px solid #192428;
     border-bottom: 3px solid #414c50;
     margin:0;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width:100%;
+    border-bottom: 2px solid #370981;
 }
-.header .container{
+.social{
+    justify-content: center;
+    display:flex;
+}
+
+.container{
     display: flex;
     margin: auto;
     justify-content: space-between;
     width:80%;
-    border: 2px solid red;
+
 }
 
-
-
+.box{
+    margin-top:50px;
+    display:flex;
+    flex-direction: column;
+}
+.box img{
+    width:250px;
+}
 .header ul #aqui{
-    color:#0784b5;
+    color:rgb(255, 255, 255);
+}
+
+.banner{
+    background-image: url('imgs/bg-jelly-fish-para-home.png');
+    height:500px;
+    color:white;
+    display:flex;
+}
+.banner .container{
+    justify-content: center;
+    font-size:36px;
+
+}
+.banner .container p span{
+    font-weight: bold;
+}
+.social .container .boxes .box img{
+    width:150px;
+    height:150px;
+}
+.social .container .boxes{
+    display:flex;
+}
+
+.box p{
+    width:50%;
+}
+.footer{
+    background-color: black;
+    color:#a177e4;
+    height:5vw;
+    font-size: 15px;
+    margin-top: 5%;
+}
+.footer .container{
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color:#b6c8da;
+}
+
+.container .card{
+    color:#000000;
+    background-color: white;
+    width:25vw;
+    height:25%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw;
+    border-radius: 6%;
+
+}
+.card h1{
+    font-size: 30px;
+}
+.card h4{
+    font-size:16px;
+}
+.card input{
+    border: none;
+    height: auto;
+    border-bottom: 1px solid #370981;
+    
+}
+.card button{
+    width:40%;
+    height:4vh;
+    border: none;
+    border-radius: 15px;
+    background-color: #7543c7;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
 }
