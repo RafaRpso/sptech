@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="valorGuardadoh3"> Valor guardado: R$00.00 </h3>
+
+    <button onclick="guardar5()"> Guardar R$5.00</button>
+    <button onclick="gastar10()"> Guardar R$10.00</button><br><br>
+    <div id="mostrarDados">
+
+    </div>
+</body>
+</html>
+<script>
+    var valorGuardado=0;
+    function conferirValor(){
+       
+       if(valorGuardado>0){
+           mostrarDados.innerHTML='<span style="color:blue"> Finanças! Ok! </span>'
+           
+           if(valorGuardado>100){
+               mostrarDados.innerHTML = "#Ostentação"
+           }
+       }
+       else if(valorGuardado<0){
+           mostrarDados.innerHTML='<span style="color:red"> Finanças em perigo! </span>'
+           if(valorGuardado<20){
+               mostrarDados.innerHTML='Quase um corinthians!'
+           }
+       }
+    }
+    function guardar5(){ 
+            valorGuardado=valorGuardado+5;
+            valorGuardadoh3.innerHTML = `Valor guardado: R$${valorGuardado}` 
+            conferirValor() 
+         }
+    function gastar10(){ 
+            valorGuardado=valorGuardado-10;
+            valorGuardadoh3.innerHTML = `Valor guardado: R$${valorGuardado}`  
+            conferirValor()
+        }
+    
+
+
+  
+</script>

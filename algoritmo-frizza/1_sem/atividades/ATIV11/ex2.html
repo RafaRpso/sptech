@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Escreva sua renda familiar: 
+    <input id="rendaFamilia"><br><br> 
+    <button onclick="calcularRenda()">
+        Calcular sua classe 
+    </button>
+    <br>
+    <br>
+    <div id="mostrarDados">
+
+    </div>
+</body>
+</html>
+<script>
+    function calcularRenda(){
+        var valorCoisa = rendaFamilia.value
+        
+        if(valorCoisa<250){
+            mostrarDados.innerHTML = "Você é da classe E"
+        }
+        else if(valorCoisa>250){
+            if(valorCoisa<=900){
+                mostrarDados.innerHTML = "Você é da classe D"
+            }
+        }
+        if(valorCoisa>900){
+            if(valorCoisa<=2500){
+                mostrarDados.innerHTML = "Você é da classe C"
+            }
+        }
+        else if(valorCoisa>2500){
+            if(valorCoisa<=9500){
+                mostrarDados.innerHTML = "Você é da classe B"
+            }
+        }
+         if(valorCoisa>9500){
+            mostrarDados.innerHTML = "Você é da classe A <h6> Tá podendo ein </h6>"
+        }
+        else if(valorCoisa<0){
+            mostrarDados.innerHTML = "Você está com dívida"
+        }
+        else if(valorCoisa==0){
+            mostrarDados.innerHTML = "Você está zerado"
+        }
+        else if(valorCoisa!=Number(valorCoisa)){
+            alert("O valor precisa ser um número.")
+            mostrarDados.innerHTML = ""
+        }
+    }
+</script>

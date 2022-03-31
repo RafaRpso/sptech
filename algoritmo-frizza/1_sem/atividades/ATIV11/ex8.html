@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8</title>
+</head>
+<body>
+    Insira quantos pães franceses você come por dia
+    <input type="text" name="" id="paesFranceses">
+    <br><br>
+    Insira quantos pacotes de bolacha recheada você tem comido por dia
+    <input type="text" name="" id="pacoteBolacha">
+    <br><br>
+    Insira quantos copos de achocolatado você tem tomado por dia
+    <input type="text" name="" id="coposAchocolatado">
+    <br><br>
+    <button onclick="verificarCalorias()"> Verificar calorias </button><br><br>
+    <div id="mostrarDados">
+
+
+    </div>
+
+</body>
+</html>
+<script>
+    function verificarCalorias(){
+        var calorias= (Number(paesFranceses.value)*50)+(Number(pacoteBolacha.value)*80)+(Number(coposAchocolatado.value)*70); 
+
+        if(calorias<200){
+            mostrarDados.innerHTML = "Parabéns! Vai sair em forma da quarentena"
+        }
+        if(calorias>=200){
+            if(calorias<=400){
+                mostrarDados.innerHTML = "Cuidado! Vai ficar fofinho(a) após a quarentena! "
+            }
+            if(calorias>400){
+                mostrarDados.innerHTML = "Bom, acho que muitos não vão te reconhecer após a quarentena"
+            }
+        }
+        
+        else if(calorias<0){
+            mostrarDados.innerHTML = "Tá malhando ein!"
+            if(calorias<-1000){
+                mostrarDados.innerHTML="Você precisa comer mais."
+            }
+        }
+        else if(calorias!=Number(calorias)){
+            alert("Insira um valor numérico")
+            mostrarDados.innerHTML=""
+        }
+    }
+</script>

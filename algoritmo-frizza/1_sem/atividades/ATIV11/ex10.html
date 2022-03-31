@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    Insira o nome do cliente 
+    <input type="text" name="" id="nomeCliente"><br>
+    Insira o saldo do cliente
+    <input type="text" name="" id="saldoCliente"><br>
+    <button onclick="verificacaoConta()">
+        Verificar conta
+    </button><br><br>
+    <div id="mostrarDados">
+
+    </div>
+</body>
+</html>
+<script>
+    function verificacaoConta(){
+        var saldo= saldoCliente.value;
+    var nome= nomeCliente.value;
+
+    if(saldo>=0){
+        if(saldo<=2000){
+            mostrarDados.innerHTML=`Com o saldo de ${saldo} o cliente ${nome} está com saldo normal`
+        }
+        else if(saldo>2000){
+            if(saldo<=5000){
+                mostrarDados.innerHTML=`Com o saldo de ${saldo} o cliente ${nome} está com saldo acima da média`
+            }
+        }
+        else{
+            mostrarDados.innerHTML=`Com o saldo de ${saldo} o cliente ${nome} tem perfil de investidor`
+        }
+    }
+    else if(saldo<0){
+        mostrarDados.innerHTML=`Com o saldo de ${saldo} o cliente ${nome} está com saldo devedor`
+    }
+    else if(saldo!=Number(saldo)){
+        alert("Insira APENAS números em Saldo")
+    }
+    }
+    
+</script>
