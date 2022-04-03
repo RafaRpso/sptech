@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+</head>
+<body>
+    <style>
+        img{
+            width:250px;
+        }
+    </style>
+    <div id="combo1">
+        <select onchange="calcularValores()" id="tipoAnimais">
+            <option value="nada">
+                - Escolha o tipo do animal - 
+            </option>
+            <option value="ovi">
+               Ovíparos 
+            </option>
+            <option value="mam">   
+                Mamíferos.
+            </option>
+        </select>
+    </div>
+   <div id="comboBoxes">
+        <div id="combo2Mam" style="display:none;">
+            <select onchange="calcularValores()" name="" id="selectMamAnimais">
+                <option value="nada" autofocus>- Escolha o mamífero -</option>
+                <option value="Elefante">Elefante</option>
+                <option value="Porco">Porco</option>
+                <option value="Coelho">Coelho</option>
+            </select>
+        </div>
+        <div id="combo2Ovi" style="display:none;">
+            <select onchange="calcularValores()" name="" id="selectOviAnimais">
+                <option value="nada" autofocus>- Escolha o Oviparos-</option>
+                <option value="Galinha">Galinha</option>
+                <option value="Peixe">Peixe</option>
+                <option value="Tartaruga">Tartaruga</option>        
+            </select>
+        </div>
+
+
+        <div id="mostrarDados">
+        
+        </div>
+
+            
+            
+            
+            
+    </select>
+</div>
+</body>
+</html>
+<script>
+    var tipoAnimal = ""; 
+    var valorAnimal=0;
+
+
+    function calcularValores(){
+        var imagem="";
+        var tipoAnimal = tipoAnimais.value
+        var qualAnimal=""
+        if(tipoAnimal=='mam'){ //mamifero
+            combo2Mam.style.display='block'
+            combo2Ovi.style.display='none'
+            qualAnimal=selectMamAnimais.value
+            if(qualAnimal=="Elefante"){
+                imagem="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-Dik2j_4eNQk%2FUXZqNT3mi_I%2FAAAAAAAAAMQ%2FuOLig_wWvRg%2Fs1600%2FElephant-Lovely-Animal.JPG&f=1&nofb=1"
+
+                mostrarDados.innerHTML= `<<img src="${imagem}" id="imagemAnimal"><br><br>
+                Valor compra animal:
+                <input id="valorCompraMam"><br><br>
+                <button onclick="calcularImposto()"> Calcular Imposto </button>
+                <br><br><div id="mostrarImposto"> </div>
+                `
+
+            }
+            else if(qualAnimal=="Porco"){
+                imagem="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-fPUzNR0p4sk%2FUOoUrIwq0HI%2FAAAAAAAAT2w%2FQK2DMpY4f68%2Fs1600%2Fporco.jpg&f=1&nofb=1"
+
+
+
+                mostrarDados.innerHTML= ` <img src="${imagem}" id="imagemAnimal"><br><br>
+                Valor compra animal:
+                <input id="valorCompraMam"><br><br>
+                <button onclick="calcularImposto()"> Calcular Imposto </button>
+                <br><br><div id="mostrarImposto"> </div>
+                `
+            
+            }
+            else if(qualAnimal=="Coelho"){
+                imagem="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcoelhodeestimacao.com.br%2Fwp-content%2Fgallery%2Fcalifornia%2FWhatsApp-Image-2018-01-15-at-18.16.46.jpeg&f=1&nofb=1"
+
+
+                mostrarDados.innerHTML= ` <img src="${imagem}" id="imagemAnimal"><br><br>
+                Valor compra animal:
+                <input id="valorCompraMam">  <br><br>
+                <button onclick="calcularImposto()"> Calcular Imposto </button>
+                <br><br><div id="mostrarImposto"> </div>
+                `
+            
+            }
+        }
+        else if(tipoAnimal=="ovi"){//Oviparos
+            combo2Ovi.style.display='block'
+            combo2Mam.style.display='none'
+            qualAnimal=selectOviAnimais.value;
+            
+            if(qualAnimal=="Galinha"){
+                imagem="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mundoecologia.com.br%2Fwp-content%2Fuploads%2F2019%2F08%2FGalinha-Ameraucana-4.jpg&f=1&nofb=1"
+
+                mostrarDados.innerHTML= `<img src="${imagem}" id="imagemAnimal"><br><br>
+                Valor compra animal:
+                <input id="valorCompraOvi"><br><br>
+                <button onclick="calcularImposto()"> Calcular Imposto </button>
+                <br><br><div id="mostrarImposto"> </div>
+                `
+                
+             
+            }
+            else if(qualAnimal=="Peixe"){
+                imagem="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.significadodossonhos.net.br%2Fwp-content%2Fuploads%2F2012%2F10%2Fsignificado-dos-sonhos-peixe1.jpg&f=1&nofb=1"
+
+
+                mostrarDados.innerHTML= ` <img src="${imagem}" id="imagemAnimal"><br><br>
+                Valor compra animal:
+                <input id="valorCompraOvi"><br><br>
+                <button onclick="calcularImposto()"> Calcular Imposto </button>
+                <br><br><div id="mostrarImposto"> </div>
+                `
+                
+                
+            }
+            else if(qualAnimal=="Tartaruga"){
+                imagem="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-wCK-IG2z4S4%2FUZLRb7oGCoI%2FAAAAAAAADpc%2FCGE0z6tc_xI%2Fs1600%2Ftartaruga-marinha.jpg&f=1&nofb=1"
+
+
+                mostrarDados.innerHTML= ` <img src="${imagem}" id="imagemAnimal"><br><br>
+                Valor compra animal:
+                <input id="valorCompraOvi"><br><br>
+                <button onclick="calcularImposto()"> Calcular Imposto </button>
+                <br><br><div id="mostrarImposto"> </div>
+                `
+                
+            }
+
+        }
+        if(qualAnimal=="nada"){
+                mostrarDados.innerHTML=""
+            }
+      
+    }
+
+
+    var imposto=0;
+    var contador=0;
+    function calcularImposto(){
+        tipoAnimal=tipoAnimais.value
+        if(tipoAnimal=="ovi"){ //Oviparos
+            contador++;
+            valorAnimal=valorCompraOvi.value
+           imposto+=(valorAnimal*0.05)
+            mostrarImposto.innerHTML=`O imposto será de R$${imposto} (${contador} animais) <button onclick="limparTudo()"> Restart </button>`
+
+        }
+        else{
+            contador++;
+             //mamifero
+            valorAnimal=valorCompraMam.value
+            imposto+=(valorAnimal*0.10)
+            mostrarImposto.innerHTML=`O imposto será de R$${imposto} <button onclick="limparTudo()"> Restart </button>`
+        }
+    }
+
+    function limparTudo(){
+        alert(`Valor total de todos os impostos calculados R$${imposto}`);
+        mostrarDados.innerHTML=""
+        combo2Mam.style.display='none'
+        combo2Ovi.style.display='none'
+        imposto=0;
+        contador=0;
+    }
+    
+</script>

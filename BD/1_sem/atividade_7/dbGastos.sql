@@ -53,3 +53,10 @@ SELECT tbUsuario.*, tbGastos.dataGasto FROM tbUsuario, tbGastos WHERE tbGastos.d
 SELECT * FROM tbGastos ORDER BY dataGasto DESC;
 SELECT * FROM tbUsuario,tbGastos WHERE tbUsuario.idUsuario=tbGastos.idUsuario;
 SELECT * FROM tbUsuario,tbGastos WHERE tbUsuario.idUsuario=tbGastos.idUsuario AND tbGastos.dataGasto = '2022-01-11';
+
+
+
+
+UPDATE tbUsuario SET nomeUsuario='Jorge Soares da Silva' WHERE idUsuario=1;
+UPDATE tbIdioma SET nomeIdioma='Esperanto' WHERE idIdioma=4;
+DELETE FROM tbUsuario WHERE idUsuario=3;

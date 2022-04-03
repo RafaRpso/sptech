@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Qual a temperatura atual?
+    <input id="temperaturaDado">
+    <button onclick="calcularDados()">
+        Ver situação
+    </button>
+</body>
+</html>
+<script>
+    function calcularDados(){
+        temperaturaAtual = temperaturaDado.value;
+        if(temperaturaAtual>=21&&temperaturaAtual<=24){
+            alert('Temperatura Confortável (: ')
+        }
+        else{
+            alert('Temperatura desconfortável :( ')
+        }
+    }
+</script>
