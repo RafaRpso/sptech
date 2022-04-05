@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h2> Login </h2>
+    Informe o seu usuário:
+    <input id="usuarioEmail"><br><br>
+
+    Informe sua senha:
+    <input id="usuarioSenha" type="password"><br><br>
+    
+    Código de segurança:
+    <input id="usuarioSeguranca""><br><br>
+    
+
+    <button onclick="entrarUsuario()">Entrar</button>
+    <br><br>
+    <div id="mostrarDados">
+
+    </div> 
+</body>
+</html>
+<script>
+    function entrarUsuario(){
+        var senha = usuarioSenha.value;
+        var email= usuarioEmail.value;
+        var seguranca=usuarioSeguranca.value;
+        if(senha!=''&&email!=''&&seguranca!=''){
+            if(seguranca==Number(seguranca)){
+                if(senha=='digital'&&email=='sptech'&&seguranca=='123'){
+                alert("Usuário autenticado com sucesso!")
+            }
+                else{
+                    alert('Falha na autenticação')
+                }
+            }
+            else{
+                alert('O código de segurança precisa ser um número')
+            }
+          
+        }
+        else{
+            alert('Insira algum valor')
+        }
+        
+    }
+</script>
