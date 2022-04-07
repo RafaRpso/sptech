@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Exercício 9 </title>
+</head>
+<body>
+    <h1>Você é vegano?</h1>
+    <select name="" id="alimentoCombo" onchange="valorDados()">
+        <option value="1">Carne Bovina</option>
+        <option value="2"> Soja</option>
+        <option value="3">Carne suína </option>
+        <option value="4">Legumes</option>
+        <option value="5">Carne de peixes</option>
+        <option value="6">Frutas</option>
+        <option value="7">Ovos</option>
+    </select><br><br>
+    <div id="mostrarDados">
+
+    </div>
+</body>
+</html>
+<script>
+    function valorDados(){
+        var alimentoComido = alimentoCombo.value
+        if(alimentoComido==2||alimentoComido==4||alimentoComido==6){
+            alert("Você pode ser vegano")
+        }
+        else if(alimentoComido==2||alimentoComido==4||alimentoComido==6||alimentoComido==7){
+            alert("Você pode ser vegetariano")
+        }
+        else{
+            alert("Você não pode ser vegano")
+        }
+    }
+</script>

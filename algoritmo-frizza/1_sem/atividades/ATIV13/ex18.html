@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    
+<div class="conteudo">
+    Escreva a nota do aluno<br>
+    <input type="text" name="" id="idnotaAluno"><br>
+    Escreva a frequência do aluno<br>
+    <input type="text" name="" id="idfreqAluno">
+    <button onclick="verificarNota()">Analisar Aluno</button></div>
+
+    <div id="mostrarDados">
+
+    </div>
+
+</body>
+</html>
+<script>
+    function verificarNota(){
+
+        var nota = idnotaAluno.value;
+        var frequencia=idfreqAluno.value
+        if(nota<0||nota>10) return alert('Onde já se viu nota <0 ou >10?!')
+
+        if(frequencia<0||frequencia>100) return alert('Onde já se viu nota <0 ou >10?!')
+            
+        if(frequencia>75){
+            if(nota>0&&nota<=6){
+                alert('Aluno ficou abaixo da média')
+             }
+          else if(nota>6&&nota<=8){
+                alert('Aluno ficou na média')
+          }
+            else if(nota>8&&nota<=10){
+                alert('Aluno ficou acima da média')
+             }
+
+            alert('Aluno aprovado por frequência')
+        }
+        else{
+            alert('Aluno reprovado por frequência')
+        }
+        
+        autenticacao()
+
+        
+    }
+
+
+</script>

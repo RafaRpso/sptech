@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <h1> Juliana Joada</h1>
+    Qual fruta Juliana vai comer?
+    <input type="text" id="selecionaFruta"> <button onclick="verificarFruta()"> Ver fruta</button><br><br>
+    <div class="mostrarDados">
+
+    </div>
+</body>
+</html>
+<script>
+    function verificarFruta(){
+        var qualFruta=selecionaFruta.value;
+        
+        if( qualFruta.toLowerCase()=='uva'||qualFruta.toLowerCase()=='abacaxi'){
+            alert("Sim, vai comer "+qualFruta)
+        }
+        else{
+            alert("A fruta "+qualFruta.toLowerCase()+" ela não come")
+        }
+    }
+</script>

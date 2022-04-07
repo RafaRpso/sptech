@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <h1> Covid</h1>
+    <p>
+        Escreva a renda individual 
+        <input type="text" name="" id="rendaIndividualUsuario"><br><br>
+        Escreva a renda da familia
+        <input type="text" name="" id="rendaFamiliaUsuario">
+    </p>
+
+    <button onclick='verBeneficio()'> Terei beneficio?</button>
+</body>
+</html>
+<script>
+    function verBeneficio(){
+        var rendaIndividual = rendaIndividualUsuario.value;
+        
+        var rendaFamilia = rendaFamiliaUsuario.value;
+
+        if(rendaIndividual==''||rendaFamilia=='') return alert('Campos vazios')
+
+        if(rendaFamilia!=Number(rendaFamilia)||rendaIndividual!=Number(rendaIndividual)) return alert("Insira apenas valores numéricos")
+
+        if(rendaFamilia<=0 || rendaIndividual<=0) return alert("O valor precisa ser maior do que 0")
+        if((rendaIndividual<=2000)||(rendaFamilia<=3000)){
+            alert("Você tem direito ao auxilio")
+        }
+        else{
+            alert("Você não tem direito ao auxilio")
+        }
+    }
+</script>

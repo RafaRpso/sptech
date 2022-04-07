@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Exercício 9 </title>
+</head>
+<body>
+    <h1>SPTRANS </h1>
+
+    <select name="" id="idTipoBilhete">
+        <option value="1">Comum</option>
+        <option value="2">Estudante</option>
+        <option value="3">Idoso/PNE</option>
+    </select>
+    <select name="" id="idTipoPassagem">
+        <option value="1">Passagem único</option>
+        <option value="2">Passagem Integração</option>
+    </select>
+
+    <button onclick="valorDados()">Simular Preço</button><br><br>
+
+
+    <div id="mostrarDados">
+
+    </div>
+</body>
+</html>
+<script>
+   
+    function valorDados(){
+       var tipoBilhete=idTipoBilhete.value;
+       var tipoPassagem=idTipoPassagem.value;
+       var valorPassagem=0;
+
+
+       if(tipoBilhete=='1'&&tipoPassagem=='1'){  
+            valorPassagem=4.40
+            return  alert('O valor da passagem escolhida é R$'+valorPassagem)
+       }
+       else if(tipoBilhete==1&&tipoPassagem==2){
+          valorPassagem=5.90
+            return  alert('O valor da passagem escolhida é R$'+valorPassagem)
+       }
+     
+      if(tipoBilhete=='2'&&tipoPassagem==1){
+            valorPassagem=4.40/2
+            return alert('O valor da passagem escolhida é R$'+valorPassagem)
+       }
+       else if(tipoBilhete==2 && tipoPassagem==2){
+                valorPassagem=5.90/2
+                return alert('O valor da passagem escolhida é R$'+valorPassagem)
+            }
+
+       if(tipoBilhete=='3'){
+            valorPassagem=0
+            return alert('O valor da passagem escolhida é R$'+valorPassagem)
+       }
+
+
+
+
+    }
+</script>

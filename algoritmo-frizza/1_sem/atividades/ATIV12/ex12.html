@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 12</title>
+</head>
+<body>
+    <div>
+        <h3 id="contadorClick">0 </h3>
+        <button onclick="calcularClicks()" style="width:20%;height:250px;">  Clica meu </button>
+
+        <br><br><b><div id="mostrarDados">
+
+    </div></b>
+</div>
+</body>
+</html>
+<script>
+    var numClicks=0;
+    function calcularClicks(){
+        numClicks+=1;
+        contadorClick.innerHTML=numClicks;
+        if(numClicks!=0){
+            if(numClicks<5){
+            mostrarDados.innerHTML='Dedo fraquinho ein!'
+            }
+            else if(numClicks>=5&&numClicks<=10){
+                mostrarDados.innerHTML='Dedo bom, mano.'
+            }
+            else if(numClicks>10&&numClicks<=15){
+                mostrarDados.innerHTML='Gosta de clicar ein'
+            }
+            else if(numClicks>15){
+                mostrarDados.innerHTML='Eita dedo nervoso!'
+            }
+        }
+        
+    }
+</script>
