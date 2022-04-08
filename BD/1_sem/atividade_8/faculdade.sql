@@ -61,7 +61,7 @@ SELECT * FROM tbAluno;
 SELECT * FROM tbProjeto
 SELECT * FROM tbAluno WHERE tbProjeto.idProjeto = tbAluno.idProjeto;
 SELECT * FROM tbAcompanhante WHERE tbAluno.idALuno = tbAcompanhante.idAluno;
-SELECT * FROM tbAluno AS aluno, tbAluno AS representante WHERE aluno.idAluno = representante.idRepresentante;
+SELECT * FROM tbAluno AS aluno, tbAluno AS representante WHERE aluno.idRepresentante = representante.idAluno;
 SELECT * FROM tbAluno,tbProjeto WHERE tbProjeto.nomeProjeto='Automatização de agenda de confissão' AND tbProjeto.idProjeto=tbAluno.idProjeto;
 SELECT * FROM tbAluno,tbProjeto,tbAcompanhante WHERE tbAluno.idAluno=tbAcompanhante.idAluno AND tbAluno.idProjeto=tbProjeto.idProjeto ;
 
