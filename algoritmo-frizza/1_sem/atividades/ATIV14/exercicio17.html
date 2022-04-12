@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 17</title>
+</head>
+<body>
+    <h1> Exercício 17</h1>
+
+
+    <select name="" id="tipoArrozInp">
+        <option value="">- Escolha o seu tipo de arroz</option>
+        <option value="integral">Integral</option>
+        <option value="branco">Branco</option>
+    </select><br><br>
+    Qual o tempo de cozinhamento?/min
+    <input type="text" name="" id="tempoCozinha">
+    <br><br>
+    Qual a quantidade de sal?/g
+    <input type="text" name="" id="qntSalInp">
+    <br><br>
+    <button onclick="avaliadorArroz()">Avaliar Arroz</button>
+    <br><br>
+    <div id="mostrarDados">
+
+    </div>
+</body>
+</html>
+<script>
+    function avaliadorArroz(){ 
+        var tipoArroz = tipoArrozInp.value
+        var tempoArroz=tempoCozinha.value;
+        var qntSal = qntSalInp.value
+
+        //Consistencia 
+        if(tipoArroz==''||tempoArroz==''||qntSal==''){
+            alert('Algum dos valores está vazio.')
+        }
+        else if(tempoArroz!=Number(tempoArroz)||qntSal!=Number(qntSal)){
+            alert('Insira apenas valores numéricos')
+        }
+        else{
+        // Algorítmo
+        if( (tipoArroz='branco'&&tempoArroz==10)&&qntSal==10 || (tipoArroz='integral' && tempoArroz
+        ==20&&qntSal==15)){
+            mostrarDados.innerHTML='<h2>Seu arroz está perfeito!</h2>'
+        }
+        else {
+            mostrarDados.innerHTML='<h2>Seu arroz não está perfeito</h2>'
+        }  
+        }
+
+    }
+</script>

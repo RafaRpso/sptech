@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 14 </title>
+</head>
+<body>
+    <div id="selecaoAltura">
+        Insira a altura inicial<br>
+        <input type="text" name="" id="alturaInicial"><br><br>
+    
+        Insira a altura final?<br>
+        <input type="text" name="" id="alturaFinal"><br><br>
+    
+        <button onclick="validarAltura()">Selecionar</button>        
+    </div>
+    <div id="selecaoAtleta" style="display:none;">
+        <h1> Processo de seleção para novos atletas</h1>
+        <h4 id="alterarAltura">Critério de seleção de piloto - altura entre x até x</h4>
+       
+        Nome do candidato 
+        <input type="text" name="" id="nomeCandidato"><br><br>
+        
+        
+        Altura do candidato?<br>
+        <input type="text" name="" id="alturaCandidato"><br><br>
+    
+        <select name="" id="tipoJogoUsuario">
+            <option value="">Escolha o esporte do usuário</option>
+            <option value="basquete">Basquete</option>
+            <option value="piloto">Piloto</option>
+        </select><br<br><br><br>
+        <button onclick="conferirDados()">Conferir dados</button>
+
+        <div id="mostrarDados">
+
+        </div>
+
+    
+    </div>
+
+
+</body>
+</html>
+<script>
+    var alturaInicio=0;
+    var alturaFim=0; 
+
+    function validarAltura(){
+         alturaInicio=alturaInicial.value;
+         alturaFim=alturaFinal.value;
+
+        if(alturaInicio==''||alturaFim==''){
+            alert("Algum dos valores está vazio.")
+        }
+        else if(alturaInicio!=Number(alturaInicio)||alturaFim!=Number(alturaFim)){
+            alert("Apenas valores numéricos nas alturas")
+        }
+        else if(alturaInicio>1&&alturaInicio<alturaFinal){
+            selecaoAltura.style.display='none'
+           selecaoAtleta.style.display='block'
+
+           alterarAltura.innerHTML=`Critério de seleção de piloto - altura entre ${alturaInicio}m até ${alturaFim}m`
+        }
+        else if ((alturaInicio||alturaFinal)<1){
+            alert("Um dos valores é abaixo de um")
+        }
+        else if (alturaInicio>alturaFinal){
+            alert("A altura inicial não pode ser maior do que a final")
+        }
+    }
+
+    function conferirDados(){
+        var nomeCand=nomeCandidato.value; 
+        var alturaCand=alturaCandidato.value; 
+        var esporteCand=tipoJogoUsuario.value;
+
+        if((nomeCand||alturaCand||esporteCand)==''){ //eita
+            alert('Algum dos valores está vazio')
+        }
+        else if(alturaCand!=Number(alturaCand)){
+            alert('O valor da altura não é um valor numérico.')
+        }
+
+        
+        else if(alturaCand>=alturaInicio&&alturaCand<=alturaFim){
+            if(esporteCand=='basquete'){
+                mostrarDados.innerHTML+=`O candidato ${nomeCand} com altura de ${alturaCand} participará do processo de seleção de basquete <br>`
+            }
+            else if(esporteCand=='piloto'){
+                mostrarDados.innerHTML+=`O candidato ${nomeCand} com altura de ${alturaCand} participará do processo de seleção de piloto <br>`
+            }
+        }
+        else{
+            mostrarDados.innerHTML+=`Infelizmente o candidato ${nomeCand} com altura de ${alturaCand} não atende os requisitos <br>`
+        }
+    }
+</script>
