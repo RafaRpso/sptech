@@ -60,12 +60,12 @@ SELECT * FROM tbTime ORDER BY dataFormacaoTime DESC;
 UPDATE tbJogador SET posicaoJogador='Reserva' WHERE idJogador=3;
 SELECT * FROM tbTime,tbJogador WHERE tbJogador.idTime=tbTime.idTime;
 SELECT * FROM tbJogador AS jogador, tbJogador AS conselheiro WHERE jogador.idJogador=conselheiro.idJogador;
-SELECT * FROM tbTime,tbJogador AS jogador, tbJogador AS conselheiro WHERE jogador.idJogador=conselheiro.idjogador AND jogador.idTime=tbTime.idTime;
-SELECT * FROM tbTime,tbJogador AS jogador, tbJogador AS conselheiro WHERE jogador.idJogador=conselheiro.idJogador AND jogador.idTime=tbTime.idTime AND jogador.nomeJogador='Guilherme Almeida';
+SELECT * FROM tbTime,tbJogador AS jogador, tbJogador AS conselheiro WHERE jogador.idConselheiro=conselheiro.idjogador AND jogador.idTime=tbTime.idTime;
+SELECT * FROM tbTime,tbJogador AS jogador, tbJogador AS conselheiro WHERE jogador.idConselheiro=conselheiro.idJogador AND jogador.idTime=tbTime.idTime AND jogador.nomeJogador='Guilherme Almeida';
 SELECT * FROM tbJogador, tbSeguidor WHERE tbSeguidor.idJogador=tbJogador.idJogador;
 SELECT * FROM tbJogador, tbSeguidor, tbJogador AS jogador, tbJogador AS
- conselheiro WHERE nomeJogador='Brayan Coelho' AND conselheiro.idJogador=jogador.idJogador;
- SELECT * FROM tbJogador, tbSeguidor, tbJogador AS jogador, tbJogador AS  conselheiro WHERE jogador.nomeJogador='Brayan Coelho' AND conselheiro.idJogador=jogador.idJogador AND tbSeguidor.idJogador=tbJogador.idJogador;
+ conselheiro WHERE nomeJogador='Brayan Coelho' AND conselheiro.idJogador=jogador.idConselheiro;
+ SELECT * FROM tbJogador, tbSeguidor, tbJogador AS jogador, tbJogador AS  conselheiro WHERE jogador.nomeJogador='Brayan Coelho' AND conselheiro.idJogador=jogador.idConselheiro AND tbSeguidor.idJogador=tbJogador.idJogador;
 
 DELETE FROM tbJogador WHERE idJogador=5;
 DROP TABLE tbSeguidor;
