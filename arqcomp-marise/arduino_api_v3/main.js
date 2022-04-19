@@ -75,7 +75,7 @@ const servidor = ( // a declaração desse servidor é cada um dos valores
 ) => {
     const app = express();
     app.use((request, response, next) => {
-        response.header('Access-Control-Allow-Origin', '*'); // no idea 
+        response.header('Access-Control-node Allow-Origin', '*'); // no idea 
         response.header('Access-Control-Allow-Headers', 'Origin, Content-Type, Accept');
         next(); // retorna a possibilidade de cada um dos valores
     });
