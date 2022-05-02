@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=" width=, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h4> Quantas pessoas vão entrar no carro? </h4> 
+    <input type="text" name="" id="pessoasCarro"><br>
+    <h4> Quantas pessoas o carro suporta? </h4>
+    <input type="text" name="" id="pessoasCarroSuporta"><br><br>
+    <button onclick="calculoCarona()">#Partiu Carona</button>
+    
+    <br><br>
+    <div id="mostrarDados">
+
+
+    </div>
+</body>
+</html>
+<script>
+    var pessoas = 0; 
+    var pessoaSuportada = 0 
+        
+    function calculoCarona(){ 
+        mostrarDados.innerHTML=''
+        pessoas = pessoasCarro.value;
+        pessoaSuportada =  pessoasCarroSuporta.value;
+        validacao(); 
+        var i = 1 ;
+
+        
+        while (i<=pessoas){
+            if(i==1){
+                mostrarDados.innerHTML += `<br> Entrou o ${i}° passageiro ( que é o motorista. )`
+                i++; 
+            }
+            else if (i>pessoaSuportada){ 
+                mostrarDados.innerHTML+= `<br>O ${i}° passageiro terá que esperar!`
+                i++ ; 
+            }
+            else    { 
+                mostrarDados.innerHTML += `<br>Entrou o ${i}° passageiro`
+                i++;
+            }
+        }
+    }
+
+    function validacao(){ 
+        if (pessoas != Number(pessoas)) { 
+            alert("Insira a quantidade de forma numérica: Há caractéres indevidos nos campos ")
+        }
+        else if (pessoaSuportada != Number(pessoaSuportada)) { 
+            alert("Insira apenas a quantidade de pessoas suportadas: Há caracteres indevidos nos campos ")
+        }
+    }
+</script>

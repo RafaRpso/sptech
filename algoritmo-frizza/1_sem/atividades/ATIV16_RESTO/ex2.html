@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Simulador Banco</title>
+</head>
+<body>
+    <h2> As notas disponíveis são de 10, 50 e 100 reais</h2>
+    <h4 id="htmlDinheiro"> Dinheiro da máquina: R$ 1000</h4>
+    <input type="text" name="" id="inpvalSaque" placeholder="Insira o valor do saque">
+    <button onclick="contarNotas()">Checar</button>
+</body>
+</html>
+<script>
+    var valSaque = 0 ;
+    var dinheiroMaquina = 1000; 
+    function contarNotas(){ 
+        valSaque = inpvalSaque.value
+        if( valSaque<=0 ) return alert("Valor inválido. ")
+
+        if( (( valSaque%10 ) == 0 ) || ( (valSaque %10)  == 50 )|| ( (valSaque %100 ) == 0 )){
+            calculoMaquina(); 
+        }
+        else{
+            alert("Não é possível sacar esse valor.")
+        }
+
+   
+    }
+
+    function calculoMaquina() { 
+        if( ( dinheiroMaquina-valSaque ) >=0){
+            dinheiroMaquina= dinheiroMaquina - valSaque
+            htmlDinheiro.innerHTML= `Dinheiro da máquina: R$ ${dinheiroMaquina}`
+        }
+        else{ 
+            alert("Não foi possível. Falta dinheiro na maquina.")
+        }
+      
+
+
+    }
+</script>

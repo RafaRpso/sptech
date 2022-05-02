@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Simulador viagem </h3>
+
+    <h5>Quantos ônibus você precisa pegar?</h5>
+    <input type="text" name="" id="qtdOnibus">
+    <h5>Quantos trens você precisa pegar?</h5>
+    <input type="text" name="" id="qtdTrem">
+    <h5>Quantos metrôs você precisa pegar?</h5>
+    <input type="text" name="" id="qtdMetro">
+    <button onclick="simulaViagem()"> #Partiu Trajeto </button>
+    <br><br>
+    <div id="mostrarDados">
+
+    </div>
+</body>
+</html>
+<script>
+    var i = 1 ;
+    
+    function simulaViagem(){
+        var onibus = qtdOnibus.value ; 
+        var trem = qtdTrem.value ; 
+        var metro = qtdMetro.value; 
+
+        while (i<=onibus){ 
+            mostrarDados.innerHTML +=  `<br> <span style='color:red'> Pegando o ${i}° busão </span>`
+            validarCansaco()
+            i++; 
+        }
+
+        i=1 ; 
+
+        while (i<=trem){ 
+            mostrarDados.innerHTML +=  `<br> <span style='color:green'> Pegando o ${i}° trem </span>`
+            validarCansaco()
+            i++; 
+           
+        } 
+        
+        i=1 ; 
+
+        while (i<=metro){ 
+            mostrarDados.innerHTML +=  `<br> <span style='color:blue'> Pegando o ${i}° metro </span>`
+            validarCansaco()
+            i++; 
+            
+        }
+    }
+
+function validarCansaco(){ 
+    if( i==2 ){ 
+        mostrarDados.innerHTML+=`  ( Começando a ficar cansado )` ;
+     
+    }
+    else if ( i== 3 ){ 
+        mostrarDados.innerHTML+=`  ( Já cansado! )` ;
+    }
+}
+</script>

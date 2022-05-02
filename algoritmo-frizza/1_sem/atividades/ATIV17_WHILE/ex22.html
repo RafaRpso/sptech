@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Curto 3 e 5!</h3>
+
+    <button onclick="calculaNumeros()">Curto 3 e 5</button>
+
+    <div id="mostrarDados">
+
+
+    </div> 
+</body>
+</html>
+<script>
+    function calculaNumeros(){ 
+        var i=1; 
+        while (i<100){ // de 1 a 99 (quase 0 a 100)
+            aux = i ; 
+            if ( aux%3 == 0 && aux%5 == 0){ 
+                aux = 'É TRI!!! É PENTA!!!'
+            }
+            else if ( aux%3 == 0 ){
+                aux = 'É TRI!!!'
+            }
+            else if ( aux%5 == 0) { 
+                aux = 'É PENTA!!!'
+            }
+     
+            mostrarDados.innerHTML+=`<br> ${aux}`
+            i++ ; 
+        }
+    }
+</script>

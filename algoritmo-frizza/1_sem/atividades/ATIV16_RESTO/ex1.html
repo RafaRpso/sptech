@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Insira um valor divisível por 7
+    <input type="text" name="" id="inpvalor"><br>
+    <button onclick="checaDivisao()">Ver número</button>
+</body>
+</html>
+<script>
+    function checaDivisao() { 
+        if(inpvalor.value%7==0){ 
+            alert("O valor é divisível por 7 ")
+        }
+        else{ 
+            alert("O valor não é divisível por 7")
+        }
+    }
+</script>

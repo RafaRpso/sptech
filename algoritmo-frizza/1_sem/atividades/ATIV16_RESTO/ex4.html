@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="limInf" placeholder="escreva o limite inferior"> <br> <br> 
+    <input type="" name="" id="limSup" placeholder="escreva o limite superior" ><br><br>
+    <button onclick="limite(limInf.value , limSup.value)"> Calcular </button><br><br>
+    <div id = 'imprimeWhile'></div>
+</body>
+</html>
+<script>
+    const limite = (a,b) => { 
+        if ( a>b ) return  alert("O número inferior deve ser menor.")
+        else{ 
+            imprimeWhile.innerHTML=null
+            let i=Number(a)+1;
+            while(i<b){ 
+                imprimeWhile.innerHTML += `<br> ${i}`
+                i++
+            }
+        }
+    }
+</script>
