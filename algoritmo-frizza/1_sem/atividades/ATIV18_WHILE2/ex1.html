@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label > Forneça o menor número do intervalo </label>
+    <input type="text" name="" id="intervaloMenor">
+
+    <label > Forneça o maior número do intervalo </label>
+    <input type="text" name="" id="intervaloMaior">
+
+    <button onclick="checarNumero()"> Mostrar Intervalo</button>
+    <br><br><div id="mostrarDados">
+
+    </div>
+</body>
+</html>
+<script>
+    function checarNumero(){
+     var i=0;
+     
+
+       while(i<intervalMajor){
+           alert(i)
+            texto = `O número ${i} é divisível por todos `;
+            if(i%2==0){ 
+                texto += ", 2";
+            }            
+            if(i%3==0){
+                texto += ", 3";
+            }
+            if(i%5==0){
+                texto += ", 5";
+            }
+            if(i%7==0){
+            texto += ", 7";
+            }
+            if(i%11==0){
+                texto += ", 11";
+            }
+            if(i%13==0){
+                texto += " ,13";
+            }
+            mostrarDados.innerHTML +=  `<br>${texto}`;
+            i++;
+        }
+        
+    }
+ 
+  
+    
+
+
+</script>
