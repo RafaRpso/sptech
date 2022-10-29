@@ -1,0 +1,31 @@
+DROP DATABASE IF EXISTS webCrowler; 
+CREATE DATABASE IF NOT EXISTS webCrowler ; 
+USE  webCrowler; 
+
+CREATE TABLE cpu ( 
+    id INT PRIMARY KEY AUTO_INCREMENT, 
+    dado FLOAT NOT NULL , 
+    hora DATETIME 
+); 
+
+
+CREATE TABLE ram( 
+    id INT PRIMARY KEY AUTO_INCREMENT, 
+    dado FLOAT NOT NULL , 
+    hora DATETIME 
+); 
+
+
+
+CREATE TABLE disco ( 
+    id INT PRIMARY KEY AUTO_INCREMENT, 
+    dado FLOAT NOT NULL , 
+    hora DATETIME 
+); 
+
+
+CREATE TABLE temp ( 
+    id INT PRIMARY KEY AUTO_INCREMENT, 
+    dado FLOAT NOT NULL , 
+    hora DATETIME 
+); 

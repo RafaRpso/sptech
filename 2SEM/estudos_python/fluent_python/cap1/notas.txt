@@ -1,0 +1,1 @@
+___metodoespecial___ => sintax do metodo 
