@@ -1,0 +1,190 @@
+USER;ID; %CPU ;%MEM;VSZ; RSS TTY;STAT START; TIME;  COMMAND
+root; 2;0.0;0.0;0; 0 ?;S;nov01; 0:00 [kthreadd]
+root; 3;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [rcu_gp]
+root; 4;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [rcu_par_gp]
+root; 5;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [slub_flushwq]
+root; 6;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [netns]
+root; 8;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [kworker/0:0H-kblockd]
+root;10;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [mm_percpu_wq]
+root;12;0.0;0.0;0; 0 ?;I;nov01; 0:00;\_ [rcu_tasks_kthread]
+root;13;0.0;0.0;0; 0 ?;I;nov01; 0:00;\_ [rcu_tasks_rude_kthread]
+root;14;0.0;0.0;0; 0 ?;I;nov01; 0:00;\_ [rcu_tasks_trace_kthread]
+root;15;0.0;0.0;0; 0 ?;S;nov01; 0:03;\_ [ksoftirqd/0]
+root;16;0.0;0.0;0; 0 ?;R;nov01; 0:05;\_ [rcu_preempt]
+root;17;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [rcub/0]
+root;18;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [migration/0]
+root;19;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [idle_inject/0]
+root;21;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [cpuhp/0]
+root;22;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [cpuhp/1]
+root;23;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [idle_inject/1]
+root;24;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [migration/1]
+root;25;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [ksoftirqd/1]
+root;27;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [kworker/1:0H-events_highpri]
+root;28;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [cpuhp/2]
+root;29;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [idle_inject/2]
+root;30;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [migration/2]
+root;31;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [ksoftirqd/2]
+root;33;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [kworker/2:0H-kblockd]
+root;34;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [cpuhp/3]
+root;35;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [idle_inject/3]
+root;36;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [migration/3]
+root;37;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [ksoftirqd/3]
+root;39;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [kworker/3:0H-events_highpri]
+root;40;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [kdevtmpfs]
+root;41;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [inet_frag_wq]
+root;42;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [kauditd]
+root;43;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [khungtaskd]
+root;44;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [oom_reaper]
+root;46;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [writeback]
+root;47;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [kcompactd0]
+root;48;0.0;0.0;0; 0 ?;SN; nov01; 0:00;\_ [ksmd]
+root;49;0.0;0.0;0; 0 ?;SN; nov01; 0:01;\_ [khugepaged]
+root;50;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [kintegrityd]
+root;51;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [kblockd]
+root;52;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [blkcg_punt_bio]
+root;55;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [ata_sff]
+root;56;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [edac-poller]
+root;57;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [devfreq_wq]
+root;58;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [watchdogd]
+root;59;0.0;0.0;0; 0 ?;I<; nov01; 0:01;\_ [kworker/1:1H-events_highpri]
+root;60;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [kswapd0]
+root;67;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [kthrotld]
+root;72;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [acpi_thermal_pm]
+root;73;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [xenbus_probe]
+root;74;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [scsi_eh_0]
+root;75;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [scsi_tmf_0]
+root;76;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [scsi_eh_1]
+root;77;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [scsi_tmf_1]
+root;80;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [mld]
+root;82;0.0;0.0;0; 0 ?;I<; nov01; 0:01;\_ [kworker/3:1H-events_highpri]
+root;83;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [ipv6_addrconf]
+root;89;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [kstrp]
+root;93;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [zswap1]
+root;94;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [zswap1]
+root;95;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [zswap-shrink]
+root;35;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [charger_manager]
+root;37;0.0;0.0;0; 0 ?;I<; nov01; 0:01;\_ [kworker/2:1H-kblockd]
+root;38;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [kworker/0:1H-events_highpri]
+root;82;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [jbd2/sdb2-8]
+root;83;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [ext4-rsv-conver]
+root;82;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [cryptd]
+root;89;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [cfg80211]
+root;19;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [kmemstick]
+root;33;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [card0-crtc0]
+root;34;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [card0-crtc1]
+root;35;0.0;0.0;0; 0 ?;S;nov01; 0:00;\_ [card0-crtc2]
+root;59;0.0;0.0;0; 0 ?;S;nov01; 0:01;\_ [jbd2/sdb3-8]
+root;60;0.0;0.0;0; 0 ?;I<; nov01; 0:00;\_ [ext4-rsv-conver]
+root;7270;0.0;0.0;0; 0 ?;S<; 11:08; 0:00;\_ [krfcommd]
+root;7296;0.0;0.0;0; 0 ?;S;12:32; 0:00;\_ [irq/46-mei_me]
+root;7317;0.0;0.0;0; 0 ?;S;12:33; 0:00;\_ [hwrng]
+root; 11812;0.0;0.0;0; 0 ?;S<; 13:50; 0:00;\_ [khidpd_ae248918]
+root; 12632;0.0;0.0;0; 0 ?;I;14:08; 0:00;\_ [kworker/3:0-events]
+root; 13456;0.0;0.0;0; 0 ?;I<; 14:41; 0:02;\_ [kworker/u9:1-hci0]
+root; 14123;0.0;0.0;0; 0 ?;I;15:26; 0:00;\_ [kworker/u8:3-events_unbound]
+root; 14577;0.1;0.0;0; 0 ?;I;15:35; 0:01;\_ [kworker/0:0-events]
+root; 14578;0.0;0.0;0; 0 ?;I;15:35; 0:00;\_ [kworker/2:0-events]
+root; 14768;0.0;0.0;0; 0 ?;I;15:40; 0:00;\_ [kworker/u8:0-events_power_efficient]
+root; 14781;0.0;0.0;0; 0 ?;I;15:40; 0:00;\_ [kworker/3:2-events]
+root; 14880;0.0;0.0;0; 0 ?;I;15:42; 0:00;\_ [kworker/1:2-events]
+root; 14949;0.0;0.0;0; 0 ?;I;15:45; 0:00;\_ [kworker/u8:2-events_unbound]
+root; 15008;0.0;0.0;0; 0 ?;D<; 15:47; 0:00;\_ [kworker/u9:2+i915_flip]
+root; 15191;0.0;0.0;0; 0 ?;I;15:51; 0:00;\_ [kworker/0:1-events]
+root; 15192;0.0;0.0;0; 0 ?;I;15:51; 0:00;\_ [kworker/1:1-inet_frag_wq]
+root; 15274;0.0;0.0;0; 0 ?;I;15:51; 0:00;\_ [kworker/u8:1-flush-8:16]
+root; 15275;0.0;0.0;0; 0 ?;I;15:52; 0:00;\_ [kworker/2:1-events]
+root; 15775;0.0;0.0;0; 0 ?;I;15:57; 0:00;\_ [kworker/0:2-events]
+root; 15776;0.0;0.0;0; 0 ?;I;15:57; 0:00;\_ [kworker/1:0-events]
+root; 15812;0.0;0.0;0; 0 ?;I<; 15:57; 0:00;\_ [kworker/u9:0-hci0]
+root; 1;0.0;0.1 166196 11832 ?;Ss; nov01; 0:01 /sbin/init
+root;17;0.0;0.3;56520 27932 ?;Ss; nov01; 0:00 /usr/lib/systemd/systemd-journald
+root;29;0.0;0.1;32104;9904 ?;Ss; nov01; 0:00 /usr/lib/systemd/systemd-udevd
+systemd+; 365;0.0;0.0;89488;6816 ?;Ssl;nov01; 0:00 /usr/lib/systemd/systemd-timesyncd
+dbus;67;0.0;0.0; 9088;5488 ?;Ss; nov01; 0:06 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root;69;0.0;0.1;48796;8524 ?;Ss; nov01; 0:00 /usr/lib/systemd/systemd-logind
+root;82;0.0;0.2 406508 23180 ?;Ssl;nov01; 0:04 /usr/bin/NetworkManager --no-daemon
+root;87;0.0;0.2 142184 19760 ?;Ssl;nov01; 0:00 /usr/bin/sddm
+root;99;0.4;1.2 1079372 101632 tty1; Ssl+ nov01;10:03;\_ /usr/lib/Xorg -nolisten tcp -background none -seat seat0 vt1 -auth /var/run/sddm/{b0dd6b3a-47fc-4f9d-9af4-6107d48983a4} -noreset -displayfd 17
+root;70;0.0;0.2;65764 17952 ?;S;nov01; 0:00;\_ /usr/lib/sddm/sddm-helper --socket /tmp/sddm-autha23831bd-7a77-4e21-b58d-e7fb6f491699 --id 1 --start i3 --user rafaelraposo
+rafaelr+; 486;0.0;0.2 253924 22128 ?;S;nov01; 0:06;\_ i3 -a --restart /run/user/1000/i3/restart-state.486
+root;96;0.0;0.1;15116;9352 ?;Ss; nov01; 0:00 /usr/bin/wpa_supplicant -u -s -O /run/wpa_supplicant
+polkitd;436;0.0;0.1 313016;9744 ?;Ssl;nov01; 0:00 /usr/lib/polkit-1/polkitd --no-debug
+root;37;0.0;0.1 392192 15200 ?;Ssl;nov01; 0:05 /usr/lib/udisks2/udisksd
+root;60;0.0;0.1 233364;9052 ?;Ssl;nov01; 0:01 /usr/lib/upowerd
+rafaelr+; 472;0.0;0.1;17904 10776 ?;Ss; nov01; 0:00 /usr/lib/systemd/systemd --user
+rafaelr+; 473;0.0;0.0;22296;3084 ?;S;nov01; 0:00;\_ (sd-pam)
+rafaelr+; 491;0.0;0.0; 8464;4876 ?;Ss; nov01; 0:02;\_ /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+rafaelr+; 545;0.0;0.0 307764;7092 ?;Ssl;nov01; 0:00;\_ /usr/lib/at-spi-bus-launcher
+rafaelr+; 551;0.0;0.0; 8276;3964 ?;S;nov01; 0:01;|; \_ /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0
+rafaelr+; 554;0.0;0.2 1809432 16444 ?; Ssl;nov01; 1:48;\_ /usr/bin/pulseaudio --daemonize=no --log-target=journal
+rafaelr+; 572;0.0;0.1 236528;9340 ?;Sl; nov01; 0:00;|; \_ /usr/lib/pulse/gsettings-helper
+rafaelr+; 564;0.0;0.0 160976;6820 ?;Sl; nov01; 0:06;\_ /usr/lib/at-spi2-registryd --use-gnome-session
+rafaelr+;1340;0.0;1.2 913032 104328 ?; Sl; nov01; 0:04;\_ /usr/bin/flameshot
+rafaelr+;3512;0.0;0.5 545836 42828 ?;Ssl;nov02; 0:03;\_ /usr/lib/kactivitymanagerd
+rafaelr+;3519;0.0;0.3 229704 26376 ?;Ssl;nov02; 0:05;\_ /usr/bin/kglobalaccel5
+rafaelr+;7167;0.0;0.0 155088;5100 ?;Ssl;11:07; 0:00;\_ /usr/lib/dconf-service
+rafaelr+;7256;0.0;0.9 500260 75060 ?;Ssl;11:08; 0:03;\_ /usr/bin/python /usr/bin/blueman-applet
+rafaelr+;7266;0.0;0.7 475516 56388 ?;Sl; 11:08; 0:10;\_ /usr/bin/python /usr/bin/blueman-tray
+rafaelr+;7267;0.0;0.0;48760;7224 ?;Ss; 11:08; 0:00;\_ /usr/lib/bluetooth/obexd
+rafaelr+; 10131;0.0;0.3 232192 30812 ?;Sl; 13:11; 0:01;\_ /usr/bin/kded5
+rafaelr+; 485;0.0;0.2;84144 20412 ?;S;nov01; 0:00 /usr/bin/kwalletd5 --pam-login 6 8
+rafaelr+; 507;0.2;0.8 606124 65892 ?;Sl; nov01; 5:37 picom --experimental-backends
+rtkit;559;0.0;0.0;88308;1544 ?;SNsl nov01; 0:00 /usr/lib/rtkit-daemon
+rafaelr+; 583;0.0;0.0; 8072;3416 ?;S;nov01; 0:00 /usr/bin/zsh
+rafaelr+; 588;1.6;9.1 13748664 736416 ?; Sl; nov01;40:28;\_ /usr/lib/firefox/firefox
+rafaelr+; 662;0.0;0.8 257724 66180 ?;Sl; nov01; 0:00;\_ /usr/lib/firefox/firefox -contentproc -parentBuildID 20221025212237 -prefsLen 25927 -prefMapSize 228217 -appDir /usr/lib/firefox/browser {f2dda1f7-463a-45d3-99a8-9353c26dd99f} 588 true socket
+rafaelr+; 691;0.0;1.6 2498796 131088 ?;Sl; nov01; 0:16;\_ /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 26003 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {aa218279-afa2-4da4-b989-1487c100332a} 588 true tab
+rafaelr+; 752;0.0;2.3 19589680 186880 ?; Sl; nov01; 2:05;\_ /usr/lib/firefox/firefox -contentproc -childID 3 -isForBrowser -prefsLen 31430 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {bbc09fbc-4fea-4710-a901-dafbe3cdaffb} 588 true tab
+rafaelr+; 856;0.0;2.1 2585496 175500 ?;Sl; nov01; 0:16;\_ /usr/lib/firefox/firefox -contentproc -childID 6 -isForBrowser -prefsLen 31546 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {665bcabf-c813-494f-a41d-b675195712bd} 588 true tab
+rafaelr+;1211;0.0;1.2 567560 101724 ?; Sl; nov01; 1:35;\_ /usr/lib/firefox/firefox -contentproc -parentBuildID 20221025212237 -prefsLen 31650 -prefMapSize 228217 -appDir /usr/lib/firefox/browser {152215df-3979-45d7-8a59-af95aeb8c70e} 588 true rdd
+rafaelr+;1213;0.0;1.0 477088 87296 ?;Sl; nov01; 0:23;\_ /usr/lib/firefox/firefox -contentproc -parentBuildID 20221025212237 -sandboxingKind 1 -prefsLen 31650 -prefMapSize 228217 -appDir /usr/lib/firefox/browser {82ccd492-7ef3-496a-8af8-69bb24e2e5e7} 588 true utility
+rafaelr+;1456;0.1;4.6 3091408 370968 ?;Sl; nov01; 2:25;\_ /usr/lib/firefox/firefox -contentproc -childID 15 -isForBrowser -prefsLen 31650 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {34e5fe0f-3e55-4811-87fd-e13c3698476d} 588 true tab
+rafaelr+;3439;0.0;2.0 2521988 165532 ?;Sl; nov02; 1:05;\_ /usr/lib/firefox/firefox -contentproc -childID 27 -isForBrowser -prefsLen 31650 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {00f8efa8-e290-4408-9c30-a62045335e58} 588 true tab
+rafaelr+;3569;0.0;6.3 3224056 507472 ?;Sl; nov02; 1:52;\_ /usr/lib/firefox/firefox -contentproc -childID 28 -isForBrowser -prefsLen 31731 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {783ba375-06c7-4d8c-93ab-7af9698e80c9} 588 true tab
+rafaelr+;7535;0.1;2.1 2592948 173616 ?;Sl; 12:40; 0:20;\_ /usr/lib/firefox/firefox -contentproc -childID 75 -isForBrowser -prefsLen 31731 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {e0e9a37c-12bb-450f-b4d4-07418697ead5} 588 true tab
+rafaelr+;9585;1.8;3.5 2903780 288828 ?;Sl; 13:01; 3:18;\_ /usr/lib/firefox/firefox -contentproc -childID 77 -isForBrowser -prefsLen 31732 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {ca6a7c4d-643c-48c9-8ee5-99709edf765e} 588 true tab
+rafaelr+;9727;0.0;1.3 2466120 106976 ?;Sl; 13:03; 0:02;\_ /usr/lib/firefox/firefox -contentproc -childID 79 -isForBrowser -prefsLen 31732 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {24ea075f-7a01-4708-be3c-1932c8c3d210} 588 true tab
+rafaelr+;9762;0.0;1.4 2468880 117856 ?;Sl; 13:03; 0:02;\_ /usr/lib/firefox/firefox -contentproc -childID 80 -isForBrowser -prefsLen 31732 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {1108a598-0441-4979-973d-203d83682c8e} 588 true tab
+rafaelr+;9835;0.0;2.0 2547004 161764 ?;Sl; 13:03; 0:06;\_ /usr/lib/firefox/firefox -contentproc -childID 81 -isForBrowser -prefsLen 31732 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {45bb2d84-387b-4079-b11e-3cf2fdc92f4a} 588 true tab
+rafaelr+; 10546;0.2;1.6 2504480 135848 ?;Sl; 13:22; 0:25;\_ /usr/lib/firefox/firefox -contentproc -childID 89 -isForBrowser -prefsLen 31732 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {ca7be6f0-36d9-4f40-a0b2-dc58cdb8f7c8} 588 true tab
+rafaelr+; 11975;0.4;3.2 2776708 265368 ?;Sl; 13:53; 0:30;\_ /usr/lib/firefox/firefox -contentproc -childID 102 -isForBrowser -prefsLen 31981 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {797b0f97-d215-4793-bb9e-4465bb7bc8a1} 588 true tab
+rafaelr+; 12732;0.7;3.8 2955092 313112 ?;Sl; 14:11; 0:49;\_ /usr/lib/firefox/firefox -contentproc -childID 107 -isForBrowser -prefsLen 31981 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {2c20fe16-49c7-40eb-b256-97bc248b17ef} 588 true tab
+rafaelr+; 13242;0.3;3.0 2698168 242308 ?;Sl; 14:32; 0:16;\_ /usr/lib/firefox/firefox -contentproc -childID 109 -isForBrowser -prefsLen 31981 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {2413dd7f-8779-4e09-aa9c-7f1437334a07} 588 true tab
+rafaelr+; 13604;0.0;1.4 2472836 114924 ?;Sl; 15:06; 0:01;\_ /usr/lib/firefox/firefox -contentproc -childID 110 -isForBrowser -prefsLen 31981 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {a8996aed-7ca8-4bc9-bb8d-8548556c82b9} 588 true tab
+rafaelr+; 14546;0.2;1.5 2492440 126764 ?;Sl; 15:35; 0:03;\_ /usr/lib/firefox/firefox -contentproc -childID 114 -isForBrowser -prefsLen 31981 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {97366e97-ef65-4cf9-9f80-82f38a655337} 588 true tab
+rafaelr+; 14857;0.2;1.8 2712292 149936 ?;Sl; 15:41; 0:02;\_ /usr/lib/firefox/firefox -contentproc -childID 116 -isForBrowser -prefsLen 31981 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {da9b0462-9753-41bd-baab-6b920cebf7c6} 588 true tab
+rafaelr+; 15231;0.4;1.8 2498772 148280 ?;Sl; 15:51; 0:01;\_ /usr/lib/firefox/firefox -contentproc -childID 119 -isForBrowser -prefsLen 32039 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {9f2b64b5-70ad-40cc-b34a-e8d1fea67ec1} 588 true tab
+rafaelr+; 15256;0.0;1.0 2445440 85284 ?; Sl; 15:51; 0:00;\_ /usr/lib/firefox/firefox -contentproc -childID 120 -isForBrowser -prefsLen 32039 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {b3ea083a-6120-467f-a424-3bc0f00e3b51} 588 true tab
+rafaelr+; 15320;0.0;1.0 2445456 85324 ?; Sl; 15:53; 0:00;\_ /usr/lib/firefox/firefox -contentproc -childID 121 -isForBrowser -prefsLen 32039 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {1d0ba978-57d7-41ed-a573-ffc0d5b73347} 588 true tab
+rafaelr+; 15792;1.2;1.0 2445196 83640 ?; Sl; 15:57; 0:00;\_ /usr/lib/firefox/firefox -contentproc -childID 122 -isForBrowser -prefsLen 32039 -prefMapSize 228217 -jsInitLen 246704 -parentBuildID 20221025212237 -appDir /usr/lib/firefox/browser {3e0ed342-d955-4aad-b4b4-4516b587b9c7} 588 true tab
+rafaelr+;1709;0.0;0.1 175772 14308 ?;S;nov01; 0:22 i3bar --bar_id=bar-0 --socket=/run/user/1000/i3/ipc-socket.486
+rafaelr+;1717;0.1;0.1 167824 14644 ?;Sl; nov01; 3:42;\_ python3 /home/rafaelraposo/.local/bin/bumblebee-status -t gruvbox -m pomodoro memory battery date time -p time.format= %H:%M
+root;7221;0.0;0.0;11736;6040 ?;Ss; 11:08; 0:03 /usr/lib/bluetooth/bluetoothd
+rafaelr+;7245;0.0;0.0; 8072;3380 ?;S;11:08; 0:00 /usr/bin/zsh
+rafaelr+;7248;0.2;0.9 1250020 78652 ?; Sl; 11:08; 0:48;\_ /usr/bin/python /usr/bin/blueman-manager
+rafaelr+;7651;0.0;1.0 34031340 86188 ?;S;12:41; 0:00 /usr/lib/electron19/electron --type=zygote --no-zygote-sandbox --enable-crashpad --enable-crashpad
+rafaelr+;7652;0.0;1.0 34031328 84680 ?;S;12:41; 0:00 /usr/lib/electron19/electron --type=zygote --enable-crashpad --enable-crashpad
+rafaelr+;7654;0.0;0.1 34031328 13680 ?;S;12:41; 0:00;\_ /usr/lib/electron19/electron --type=zygote --enable-crashpad --enable-crashpad
+rafaelr+;7689;1.7;2.5 38903344 206724 ?; Ssl;12:41; 3:30 /usr/lib/electron19/electron --enable-crashpad /usr/lib/code/code.js
+rafaelr+;7700;0.0;1.1 34031336 89856 ?;S;12:41; 0:00;\_ /usr/lib/electron19/electron --type=zygote --no-zygote-sandbox --enable-crashpad --enable-crashpad
+rafaelr+;7742;4.9;2.5 34433800 205048 ?; Sl; 12:41; 9:46;|; \_ /usr/lib/electron19/electron --type=gpu-process --enable-crashpad --crashpad-handler-pid=7728 --enable-crash-reporter=3c914e19-bee1-49d0-8929-120d54b8497b,no_channel --user-data-dir=/home/rafaelraposo/.config/Code - OSS --gpu-preferences=WAAAAAAAAAAgAAAIAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=0,i,17835353259725269364,14001851023465754864,131072 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess
+rafaelr+;7701;0.0;1.0 34031328 87904 ?;S;12:41; 0:00;\_ /usr/lib/electron19/electron --type=zygote --enable-crashpad --enable-crashpad
+rafaelr+;7704;0.0;0.1 34031328 13644 ?;S;12:41; 0:00;|; \_ /usr/lib/electron19/electron --type=zygote --enable-crashpad --enable-crashpad
+rafaelr+;7760;0.0;1.2 34081280 102248 ?; Sl; 12:41; 0:00;\_ /usr/lib/electron19/electron --type=utility --utility-sub-type=network.mojom.NetworkService --lang=pt-BR --service-sandbox-type=none --enable-crashpad --crashpad-handler-pid=7728 --enable-crash-reporter=3c914e19-bee1-49d0-8929-120d54b8497b,no_channel --user-data-dir=/home/rafaelraposo/.config/Code - OSS --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,17835353259725269364,14001851023465754864,131072 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --enable-crashpad
+rafaelr+;7775 13.4;4.0 57360576 328896 ?; Sl; 12:41;26:25;\_ /usr/lib/electron19/electron --type=renderer --enable-crashpad --crashpad-handler-pid=7728 --enable-crash-reporter=3c914e19-bee1-49d0-8929-120d54b8497b,no_channel --user-data-dir=/home/rafaelraposo/.config/Code - OSS --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --app-path=/usr/lib/code --no-sandbox --no-zygote --enable-blink-features=HighlightAPI --lang=pt-BR --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=4 --launch-time-ticks=7600130413 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,17835353259725269364,14001851023465754864,131072 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --vscode-window-config=vscode:8056b871-4785-4ac4-9726-fc0d886ca01f --enable-crashpad
+rafaelr+;7793;2.2;2.3 38442552 191644 ?; Sl; 12:41; 4:24;\_ /usr/lib/electron19/electron --inspect-port=0 /usr/lib/code/out/bootstrap-fork --type=extensionHost --skipWorkspaceStorageLock
+rafaelr+;7864;0.3;1.7 364888 139320 ?; Sl; 12:41; 0:41;|; \_ /bin/python /home/rafaelraposo/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/run-jedi-language-server.py
+rafaelr+;7875;0.0;0.3;32932 26492 ?;S;12:41; 0:01;|; |; \_ /bin/python /home/rafaelraposo/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/lib/jedilsp/jedi/inference/compiled/subprocess/__main__.py /home/rafaelraposo/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/lib/jedilsp 3.10.8
+rafaelr+;9694;0.1;1.8 38430256 147980 ?; Sl; 13:03; 0:13;|; \_ /usr/lib/electron19/electron /usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain --node-ipc --clientProcessId=7793
+rafaelr+; 10106;1.1;1.7 38430256 139548 ?; Sl; 13:11; 1:58;|; \_ /usr/lib/electron19/electron /usr/lib/code/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=7793
+rafaelr+; 10431;0.4;1.5 38397472 120968 ?; Sl; 13:19; 0:42;|; \_ /usr/lib/electron19/electron /usr/lib/code/extensions/css-language-features/server/dist/node/cssServerMain --node-ipc --clientProcessId=7793
+rafaelr+;7805;0.2;2.3 46894192 192836 ?; Sl; 12:41; 0:25;\_ /usr/lib/electron19/electron --type=renderer --enable-crashpad --crashpad-handler-pid=7728 --enable-crash-reporter=3c914e19-bee1-49d0-8929-120d54b8497b,no_channel --user-data-dir=/home/rafaelraposo/.config/Code - OSS --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --app-path=/usr/lib/code --no-sandbox --no-zygote --node-integration-in-worker --lang=pt-BR --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=5 --launch-time-ticks=7609403852 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,17835353259725269364,14001851023465754864,131072 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --vscode-window-config=vscode:1d25b044-064e-4580-bc21-dac7107e44fc --vscode-window-kind=shared-process --enable-crashpad
+rafaelr+;7819;0.0;1.3 38430532 108220 ?; Sl; 12:41; 0:01;\_ /usr/lib/electron19/electron /usr/lib/code/out/bootstrap-fork --type=ptyHost --logsPath /home/rafaelraposo/.config/Code - OSS/logs/20221103T124115
+rafaelr+;7839;0.0;1.3 38446852 108612 ?; Sl; 12:41; 0:01;\_ /usr/lib/electron19/electron /usr/lib/code/out/bootstrap-fork --type=fileWatcher
+rafaelr+;7728;0.0;0.0 33569380 4092 ?; Sl; 12:41; 0:00 /usr/lib/electron19/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/rafaelraposo/.config/Code - OSS/Crashpad --annotation=_companyName=Microsoft --annotation=_productName=Code - OSS --annotation=_version=1.72.1 --annotation=lsb-release=Arch Linux --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=19.0.13 --initial-client-fd=66 --shared-client-connection
+rafaelr+; 15050;0.2;1.6 1088204 132520 ?;Sl; 15:48; 0:01 alacritty
+rafaelr+; 15062;0.0;0.0;10196;6392 pts/0;Ss; 15:48; 0:00;\_ /usr/bin/zsh
+rafaelr+; 15087;4.5;0.0; 9856;6344 pts/0;S+; 15:49; 0:23;\_ htop
+rafaelr+; 15341;0.4;1.7 1086240 137444 ?;Sl; 15:54; 0:01 alacritty
+rafaelr+; 15353;0.1;0.0;10604;6968 pts/1;Ss; 15:54; 0:00;\_ /usr/bin/zsh
+rafaelr+; 15827;0.0;0.0;10452;3920 pts/1;R+; 15:57; 0:00;\_ ps auxf

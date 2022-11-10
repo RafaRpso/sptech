@@ -1,0 +1,36 @@
+Locadora : 
+  Automovel : 
+      - id : Integer
+      + nome  : String
+      + categoria : Categoria 
+      + chassi : String 
+      + motor : Motor 
+      + isAlugado : Boolean 
+      + modelo : String 
+      + dataLancamento : Datetime 
+      + volumeTanque : Double 
+      + quantidadeAssentos : Integer 
+  
+  Cliente : 
+    - id : Integer 
+    - rg : Integer 
+    - cpf : Integer 
+    + nome : String
+    + isAtrasado : Boolean 
+    + isAlugado : Boolean 
+    + isSegundoMotorista : Boolean 
+    + habilitacao : Habilitacao
+    + regiao :
+
+  Funcionario : 
+    - id : Integer 
+    - cartaTrabalho : Integer 
+    - rg : Integer 
+    - cpf : Integer 
+    + nome : String 
+    + idade : SmallInt 
+    + contratos : Contratos  #contratos feitos com clientes 
+
+
+
+    
