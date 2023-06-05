@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>tags button e function</title>
+</head>
+<body>
+    <h3> Botão clicável</h3>
+    <br><br>
+    <button onclick="primeiroAlerta()">Mostrar o primeiro</button>
+    
+    <button onclick="segundoAlerta()">Mostrar o segundo</button>
+    <button onclick="falar_coisas_boas()"> 
+        <img src="imagens/st-louis.jpg" style="width: 120px;">
+    </button>
+    <!-- -->
+    <script>
+        /* O atributo > onclick < invoca a função para determinada área, e após isso, execua a mesma após ser clicada 
+        */
+
+        /* Uma função é um conjunto de comandos que fica guardado na página, pronto para ser executados empre que foi acionado ou invocado */ 
+        function falar_coisas_boas(){
+            alert("Mamãe...eu sou o maioral!!!!");
+            alert("Fiz o meu primeiro programa em javascript")
+        }
+
+
+
+        function primeiroAlerta() {
+            alert("CLIQUE AQUI PARA VER MULHERES BONITAS RS")
+            alert("Não. Você não condenará sua alma a eternidade. Não faça isso com a sua vida, você cada dia mais está se imergindo em um vazio imensurável. Retorne a Cristo. Viva Cristo Rei.")
+        };
+        function segundoAlerta(){ 
+            alert("");
+            alert("vc ne amarea");
+        }
+
+    </script>
+</body>
+</html>

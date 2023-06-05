@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id's & InnerHTML</title>
+</head>
+<body>
+    <span id="historia"> 
+    <h2> Era uma vez ... </h2>
+    </span> <br> 
+    <button onclick="decisao1()"> História normal</button>
+    <button onclick="decisao2()"> Final romântico</button>
+</body>
+</html>
+
+<script> 
+    function decisao1(){ 
+        //+= nao troca, ele incrementa 
+        historia.innerHTML = '<h2> Era uma vez ... João e Maria, eles foram pegar docinhos </h2>'
+    }
+    function decisao2(){ 
+        historia.innerHTML = '<h2>Era uma vez... e viveram felizes para sempre </h2>'
+    }
+</script>

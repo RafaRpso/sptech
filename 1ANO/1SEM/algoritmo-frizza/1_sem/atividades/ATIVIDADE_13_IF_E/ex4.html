@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <h1>Você é vegano?</h1> 
+    Preencha com oque você toma de café da manhã <br> 
+    <select name="" id="cafeManha">
+        <option value=''>- Escolha um alimento - </option>
+        <option value="ovos">Ovos</option>
+        <option value="leite_arroz">Leite de arroz</option>
+        <option value="bacon">Bacon</option>
+    </select>
+    <br><br>
+    Preencha com oque você toma no seu almoço <br> 
+    <select name="" id="cafeAlmoco">
+        <option value="">-Escolha um almoço</option>
+        <option value="bife">Bife</option>
+        <option value="ham_soja">Hamburguer de soja</option>
+        <option value="frango_grelhado">Frango grelhado</option>
+    </select>
+    <br><br>
+    Preencha com oque você toma na sua janta <br> 
+    <select name="" id="cafeJanta">
+        <option value="">- Escolha uma janta</option>
+        <option value="picanha_soja">Picanha de soja</option>
+        <option value="cupim">Cupim</option>
+        <option value="coracao">Coração</option>
+    </select>
+    <br><br>
+    <button onclick="verificarAlimento()">Verificar</button>
+</body>
+</html>
+<script>
+
+    function verificarAlimento(){
+    var  c_manha=cafeManha.value
+    var   c_tarde=cafeAlmoco.value
+    var   c_noite=cafeJanta.value
+
+        if(c_manha!=''&&c_tarde!=''&&c_noite!=''){
+            if(c_manha=='leite_arroz'&&c_tarde=='ham_soja'&&c_noite=='picanha_soja'){
+                alert("Você é vegano!")
+            }
+            else{
+            alert("Você não é vegano!")
+            }
+        }
+        else{
+            alert("Você não escolheu uma opção válida nos combos!")
+        }
+       
+       
+    }
+</script>
